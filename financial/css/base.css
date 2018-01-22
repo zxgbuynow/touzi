@@ -241,7 +241,7 @@ text-overflow: -o-ellipsis-lastline ; overflow: hidden;text-overflow: ellipsis;d
 .h-tel i{display:inline-block;width:35px;height:35px;background:url(./images/index.png) no-repeat -10px 0;float:left;}
 .h-tel p{float:left;line-height:38px;padding-left:11px;}
 .h-menu{height:50px;background:#076ee1;}
-.h-menu span a{color:#fff;margin:0 30px;padding:17px 0 13px 0;display:block;line-height:17px;*display:inline;*zoom:1;float:left;}
+.h-menu span a{color:#fff;margin:0 25px;padding:17px 0 13px 0;display:block;line-height:17px;*display:inline;*zoom:1;float:left;}
 .h-menu a:hover{color:#f1c141 !important;text-decoration:none;}
 .h-menu a.current{color:#f1c141 !important;text-decoration:none;border-bottom:3px solid #f1c141;}
 .h-menu p a{color:#fff;line-height:50px;}
