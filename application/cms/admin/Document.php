@@ -1,13 +1,5 @@
 <?php
-// +----------------------------------------------------------------------
-// | 海豚PHP框架 [ DolphinPHP ]
-// +----------------------------------------------------------------------
-// | 版权所有 2016~2017 河源市卓锐科技有限公司 [ http://www.zrthink.com ]
-// +----------------------------------------------------------------------
-// | 官方网站: http://dolphinphp.com
-// +----------------------------------------------------------------------
-// | 开源协议 ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
+
 
 namespace app\cms\admin;
 
@@ -248,8 +240,8 @@ class Document extends Admin
      */
     public function delete($ids = null, $table = '')
     {
+        $table = 'cms_document';
         if ($ids === null) $this->error('参数错误');
-
         $document_id    = is_array($ids) ? '' : $ids;
         $document_title = Db::name($table)->where('id', 'in', $ids)->column('title');
 
@@ -294,7 +286,8 @@ class Document extends Admin
      */
     public function setStatus($type = '', $record = [])
     {
-        $table_name     = input('param.table');
+        // $table_name     = input('param.table');
+        $table_name     = 'cms_document';
         $ids            = $this->request->isPost() ? input('post.ids/a') : input('param.ids');
         $document_id    = is_array($ids) ? '' : $ids;
         $document_title = Db::name($table_name)->where('id', 'in', $ids)->column('title');
