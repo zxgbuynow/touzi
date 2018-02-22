@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:66:"/data/httpd/touzi/public/../application/admin/view/menu/index.html";i:1489042526;s:52:"/data/httpd/touzi/application/admin/view/layout.html";i:1512640150;s:47:"../application/common/builder/aside/layout.html";i:1512640190;s:54:"../application/common/builder/aside/blocks/recent.html";i:1489042526;s:54:"../application/common/builder/aside/blocks/online.html";i:1489042526;s:54:"../application/common/builder/aside/blocks/switch.html";i:1489042526;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:66:"/data/httpd/touzi/public/../application/admin/view/menu/index.html";i:1489042526;s:52:"/data/httpd/touzi/application/admin/view/layout.html";i:1519272149;s:47:"../application/common/builder/aside/layout.html";i:1512640190;s:54:"../application/common/builder/aside/blocks/recent.html";i:1489042526;s:54:"../application/common/builder/aside/blocks/online.html";i:1489042526;s:54:"../application/common/builder/aside/blocks/switch.html";i:1489042526;}*/ ?>
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus" lang="zh"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-focus" lang="zh"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
 
-    <title><?php echo (isset($page_title) && ($page_title !== '')?$page_title:'后台'); ?> | <?php echo config('web_site_title'); ?> - DolphinPHP</title>
+    <title><?php echo (isset($page_title) && ($page_title !== '')?$page_title:'后台'); ?> | <?php echo config('web_site_title'); ?> </title>
 
     <meta name="description" content="<?php echo config('web_site_description'); ?>">
     <meta name="author" content="caiweiming">
