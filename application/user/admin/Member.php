@@ -5,6 +5,7 @@ namespace app\user\admin;
 
 use app\admin\controller\Admin;
 use app\common\builder\ZBuilder;
+use app\user\model\Member as MemberModel;
 use app\admin\model\Module as ModuleModel;
 use util\Tree;
 use think\Db;
@@ -12,7 +13,7 @@ use think\Hook;
 
 /**
  * 会员默认控制器
- * @package app\user\admin
+ * @package app\member\admin
  */
 class Member extends Admin
 {
@@ -28,7 +29,7 @@ class Member extends Admin
         $map = $this->getMap();
 
         // 数据列表
-        $data_list = UserModel::where($map)->order('sort,id desc')->paginate();
+        $data_list = MemberModel::where($map)->order('sort,id desc')->paginate();
 
         // 分页数据
         $page = $data_list->render();
@@ -38,7 +39,7 @@ class Member extends Admin
         // 使用ZBuilder快速创建数据表格
         return ZBuilder::make('table')
             ->setPageTitle('会员管理') // 设置页面标题
-            ->setTableName('admin_member') // 设置数据表名
+            ->setTableName('member') // 设置数据表名
             ->setSearch(['id' => 'ID', 'mobile' => '手机号']) // 设置搜索参数
             ->addColumns([ // 批量添加列
                 ['id', 'ID'],
@@ -170,7 +171,7 @@ class Member extends Admin
      */
     public function delete($ids = [])
     {
-        Hook::listen('user_delete', $ids);
+        // Hook::listen('user_delete', $ids);
         return $this->setStatus('delete');
     }
 
@@ -182,7 +183,7 @@ class Member extends Admin
      */
     public function enable($ids = [])
     {
-        Hook::listen('user_enable', $ids);
+        // Hook::listen('user_enable', $ids);
         return $this->setStatus('enable');
     }
 
@@ -194,7 +195,7 @@ class Member extends Admin
      */
     public function disable($ids = [])
     {
-        Hook::listen('user_disable', $ids);
+        // Hook::listen('user_disable', $ids);
         return $this->setStatus('disable');
     }
 
@@ -208,12 +209,8 @@ class Member extends Admin
     public function setStatus($type = '', $record = [])
     {
         $ids        = $this->request->isPost() ? input('post.ids/a') : input('param.ids');
-        if ((is_array($ids) && in_array(UID, $ids)) || $ids == UID) {
-            $this->error('禁止操作当前账号');
-        }
-        $uid_delete = is_array($ids) ? '' : $ids;
-        $ids        = array_map('get_nickname', (array)$ids);
-        return parent::setStatus($type, ['user_'.$type, 'admin_user', $uid_delete, UID, implode('、', $ids)]);
+        $menu_title = MemberModel::where('id', 'in', $ids)->column('mobile');
+        return parent::setStatus($type, ['member_'.$type, 'member', 0, UID, implode('、', $menu_title)]);
     }
 
     /**

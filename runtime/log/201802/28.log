@@ -1,0 +1,1124 @@
+---------------------------------------------------------------
+[ 2018-02-28T14:47:08+08:00 ] 10.0.2.2 GET /admin.php/admin/system/index.html
+[ info ] zg.touzi.com/admin.php/admin/system/index.html [运行时间：2.580658s][吞吐率：0.39req/s] [内存消耗：1,326.81kb] [文件加载：74]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519285424693; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.620850s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.116907s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->index[ /data/httpd/touzi/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => 'aside',
+  8 => 'page_title',
+  9 => 'page_tips',
+  10 => 'tips_type',
+  11 => 'btn_hide',
+  12 => 'btn_title',
+  13 => 'form_items',
+  14 => 'tab_nav',
+  15 => 'post_url',
+  16 => 'form_data',
+  17 => 'extra_html',
+  18 => 'extra_js',
+  19 => 'extra_css',
+  20 => 'ajax_submit',
+  21 => 'hide_header',
+  22 => 'header_title',
+  23 => 'js_list',
+  24 => 'css_list',
+  25 => 'field_triggers',
+  26 => 'field_hide',
+  27 => 'field_values',
+  28 => 'field_clear',
+  29 => '_js_files',
+  30 => '_js_init',
+  31 => '_css_files',
+  32 => '_layout',
+  33 => 'btn_extra',
+  34 => 'submit_confirm',
+  35 => 'extend_js_list',
+  36 => 'extend_css_list',
+  37 => '_method',
+  38 => 'empty_tips',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150195s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.144631s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.012052s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.022620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.017864s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.003076s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.012841s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.005059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.015699s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.002747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.012407s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.009521s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.003844s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'admin' ORDER BY sort,id [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`tips`,`type`,`value`,`options`,`ajax_url`,`next_items`,`param`,`table`,`level`,`key`,`option`,`ak`,`format` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.015851s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.008949s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002773s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:13+08:00 ] 10.0.2.2 GET /admin.php
+[ info ] zg.touzi.com/admin.php [运行时间：0.175709s][吞吐率：5.69req/s] [内存消耗：295.17kb] [文件加载：36]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-28T14:47:14+08:00 ] 10.0.2.2 GET /admin.php/admin
+[ info ] zg.touzi.com/admin.php/admin [运行时间：0.537574s][吞吐率：1.86req/s] [内存消耗：1,168.99kb] [文件加载：72]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.081548s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.035275s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008096s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001379s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.003834s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.002941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001679s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000580s ]
+[ error ] [9001]获取不到当前节点地址，可能未添加节点[/data/httpd/touzi/application/admin/model/Menu.php:217]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:21+08:00 ] 10.0.2.2 GET /admin.php
+[ info ] zg.touzi.com/admin.php [运行时间：0.259883s][吞吐率：3.85req/s] [内存消耗：295.17kb] [文件加载：36]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-28T14:47:21+08:00 ] 10.0.2.2 GET /admin.php
+[ info ] zg.touzi.com/admin.php [运行时间：0.209278s][吞吐率：4.78req/s] [内存消耗：295.17kb] [文件加载：36]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-28T14:47:21+08:00 ] 10.0.2.2 GET /admin.php/admin
+[ info ] zg.touzi.com/admin.php/admin [运行时间：0.604053s][吞吐率：1.66req/s] [内存消耗：1,165.70kb] [文件加载：72]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.098412s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.041034s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007096s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.002030s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.001527s ]
+[ error ] [9001]获取不到当前节点地址，可能未添加节点[/data/httpd/touzi/application/admin/model/Menu.php:217]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:22+08:00 ] 10.0.2.2 GET /admin.php/admin
+[ info ] zg.touzi.com/admin.php/admin [运行时间：0.502488s][吞吐率：1.99req/s] [内存消耗：1,165.70kb] [文件加载：72]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.068636s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.025146s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001805s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002781s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.002617s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001625s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.002062s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.001302s ]
+[ error ] [9001]获取不到当前节点地址，可能未添加节点[/data/httpd/touzi/application/admin/model/Menu.php:217]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:52+08:00 ] 10.0.2.2 GET /admin.php/admin
+[ info ] zg.touzi.com/admin.php/admin [运行时间：0.610946s][吞吐率：1.64req/s] [内存消耗：1,165.70kb] [文件加载：72]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.107475s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.043193s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003239s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001256s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.003253s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000742s ]
+[ error ] [9001]获取不到当前节点地址，可能未添加节点[/data/httpd/touzi/application/admin/model/Menu.php:217]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:53+08:00 ] 10.0.2.2 GET /admin.php/admin/system/index.html
+[ info ] zg.touzi.com/admin.php/admin/system/index.html [运行时间：0.501768s][吞吐率：1.99req/s] [内存消耗：1,313.13kb] [文件加载：74]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519285424693; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.058843s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.029032s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->index[ /data/httpd/touzi/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => 'aside',
+  8 => 'page_title',
+  9 => 'page_tips',
+  10 => 'tips_type',
+  11 => 'btn_hide',
+  12 => 'btn_title',
+  13 => 'form_items',
+  14 => 'tab_nav',
+  15 => 'post_url',
+  16 => 'form_data',
+  17 => 'extra_html',
+  18 => 'extra_js',
+  19 => 'extra_css',
+  20 => 'ajax_submit',
+  21 => 'hide_header',
+  22 => 'header_title',
+  23 => 'js_list',
+  24 => 'css_list',
+  25 => 'field_triggers',
+  26 => 'field_hide',
+  27 => 'field_values',
+  28 => 'field_clear',
+  29 => '_js_files',
+  30 => '_js_init',
+  31 => '_css_files',
+  32 => '_layout',
+  33 => 'btn_extra',
+  34 => 'submit_confirm',
+  35 => 'extend_js_list',
+  36 => 'extend_css_list',
+  37 => '_method',
+  38 => 'empty_tips',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002157s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.003541s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.002460s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001734s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'admin' ORDER BY sort,id [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`tips`,`type`,`value`,`options`,`ajax_url`,`next_items`,`param`,`table`,`level`,`key`,`option`,`ak`,`format` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.001372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000717s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:47:58+08:00 ] 10.0.2.2 GET /admin.php/admin/index/wipecache.html
+[ info ] zg.touzi.com/admin.php/admin/index/wipecache.html [运行时间：0.944536s][吞吐率：1.06req/s] [内存消耗：1,080.47kb] [文件加载：68]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'wipecache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'referer' => 'http://zg.touzi.com/admin.php/admin/system/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.170032s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.066931s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->wipeCache[ /data/httpd/touzi/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007252s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.012826s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.004183s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.002127s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000519s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:48:01+08:00 ] 10.0.2.2 GET /admin.php/admin/system/index.html
+[ info ] zg.touzi.com/admin.php/admin/system/index.html [运行时间：1.689576s][吞吐率：0.59req/s] [内存消耗：1,585.27kb] [文件加载：76]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://zg.touzi.com/admin.php/admin/system/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519285424693; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.083803s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.035291s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->index[ /data/httpd/touzi/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => 'aside',
+  8 => 'page_title',
+  9 => 'page_tips',
+  10 => 'tips_type',
+  11 => 'btn_hide',
+  12 => 'btn_title',
+  13 => 'form_items',
+  14 => 'tab_nav',
+  15 => 'post_url',
+  16 => 'form_data',
+  17 => 'extra_html',
+  18 => 'extra_js',
+  19 => 'extra_css',
+  20 => 'ajax_submit',
+  21 => 'hide_header',
+  22 => 'header_title',
+  23 => 'js_list',
+  24 => 'css_list',
+  25 => 'field_triggers',
+  26 => 'field_hide',
+  27 => 'field_values',
+  28 => 'field_clear',
+  29 => '_js_files',
+  30 => '_js_init',
+  31 => '_css_files',
+  32 => '_layout',
+  33 => 'btn_extra',
+  34 => 'submit_confirm',
+  35 => 'extend_js_list',
+  36 => 'extend_css_list',
+  37 => '_method',
+  38 => 'empty_tips',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003703s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002141s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.004703s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'admin' ORDER BY sort,id [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`tips`,`type`,`value`,`options`,`ajax_url`,`next_items`,`param`,`table`,`level`,`key`,`option`,`ak`,`format` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000002s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:48:06+08:00 ] 10.0.2.2 GET /admin.php
+[ info ] zg.touzi.com/admin.php [运行时间：0.154618s][吞吐率：6.47req/s] [内存消耗：295.17kb] [文件加载：36]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-28T14:48:06+08:00 ] 10.0.2.2 GET /admin.php/admin
+[ info ] zg.touzi.com/admin.php/admin [运行时间：0.447477s][吞吐率：2.23req/s] [内存消耗：1,165.70kb] [文件加载：72]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.077448s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.030251s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006996s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001219s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/index/index' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000370s ]
+[ error ] [9001]获取不到当前节点地址，可能未添加节点[/data/httpd/touzi/application/admin/model/Menu.php:217]
+---------------------------------------------------------------
+[ 2018-02-28T14:48:12+08:00 ] 10.0.2.2 GET /admin.php/admin/system/index.html
+[ info ] zg.touzi.com/admin.php/admin/system/index.html [运行时间：0.644808s][吞吐率：1.55req/s] [内存消耗：1,316.35kb] [文件加载：74]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519285424693; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.107856s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.031513s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->index[ /data/httpd/touzi/application/admin/controller/System.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/common/builder/form/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => 'aside',
+  8 => 'page_title',
+  9 => 'page_tips',
+  10 => 'tips_type',
+  11 => 'btn_hide',
+  12 => 'btn_title',
+  13 => 'form_items',
+  14 => 'tab_nav',
+  15 => 'post_url',
+  16 => 'form_data',
+  17 => 'extra_html',
+  18 => 'extra_js',
+  19 => 'extra_css',
+  20 => 'ajax_submit',
+  21 => 'hide_header',
+  22 => 'header_title',
+  23 => 'js_list',
+  24 => 'css_list',
+  25 => 'field_triggers',
+  26 => 'field_hide',
+  27 => 'field_values',
+  28 => 'field_clear',
+  29 => '_js_files',
+  30 => '_js_init',
+  31 => '_css_files',
+  32 => '_layout',
+  33 => 'btn_extra',
+  34 => 'submit_confirm',
+  35 => 'extend_js_list',
+  36 => 'extend_css_list',
+  37 => '_method',
+  38 => 'empty_tips',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004844s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.006103s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001926s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001989s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.002045s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'admin' ORDER BY sort,id [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'admin/system/index' LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `name`,`config`,`title` FROM `dp_admin_module` WHERE  `config` <> ''  AND `status` = 1 [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`tips`,`type`,`value`,`options`,`ajax_url`,`next_items`,`param`,`table`,`level`,`key`,`option`,`ak`,`format` FROM `dp_admin_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `path`,`driver`,`thumb` FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:48:19+08:00 ] 10.0.2.2 POST /admin.php/admin/ajax/getsidebarmenu.html
+[ info ] zg.touzi.com/admin.php/admin/ajax/getsidebarmenu.html [运行时间：0.432661s][吞吐率：2.31req/s] [内存消耗：1,086.49kb] [文件加载：68]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'getsidebarmenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://zg.touzi.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://zg.touzi.com/admin.php/admin/system/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+)
+[ info ] [ PARAM ] array (
+  'module_id' => '68',
+  'module' => 'user',
+  'controller' => 'index',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.085451s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.041513s ]
+[ info ] [ RUN ] app\admin\controller\Ajax->getSidebarMenu[ /data/httpd/touzi/application/admin/controller/Ajax.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002475s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001548s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002990s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.003771s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.003351s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'user' ORDER BY sort,id [ RunTime:0.001412s ]
+---------------------------------------------------------------
+[ 2018-02-28T14:48:20+08:00 ] 10.0.2.2 GET /admin.php/user/index/index.html
+[ info ] zg.touzi.com/admin.php/user/index/index.html [运行时间：0.933828s][吞吐率：1.07req/s] [内存消耗：1,620.59kb] [文件加载：81]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://zg.touzi.com/admin.php/admin/system/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; ___rl__test__cookies=1519284810034; thinkphp_show_page_trace=0|4; UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; thinkphp_show_page_trace=0|3; Hm_lvt_601c92cd729f5d300329945382cb791f=1516806022; __utmz=254390029.1516806023.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516806023; __utma=254390029.501257124.1516806023.1516863580.1516876069.3; Hm_lpvt_601c92cd729f5d300329945382cb791f=1516876220; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1516876220; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; dolphin_home___forward__=%2Fadmin.php%2Fuser%2Findex%2Findex.html',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.142774s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.050751s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\user\admin\Index->index[ /data/httpd/touzi/application/user/admin/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/common/builder/table/layout.html [ array (
+  0 => '_admin_base_layout',
+  1 => 'system_color',
+  2 => '_pop',
+  3 => '_top_menus',
+  4 => '_top_menus_all',
+  5 => '_sidebar_menus',
+  6 => '_location',
+  7 => 'aside',
+  8 => 'page_title',
+  9 => 'page_tips',
+  10 => 'tips_type',
+  11 => 'tab_nav',
+  12 => 'hide_checkbox',
+  13 => 'extra_html',
+  14 => 'extra_js',
+  15 => 'extra_css',
+  16 => 'order_columns',
+  17 => 'filter_columns',
+  18 => 'filter_map',
+  19 => '_field_display',
+  20 => '_filter_content',
+  21 => '_filter',
+  22 => 'top_buttons',
+  23 => 'right_buttons',
+  24 => 'search',
+  25 => 'search_button',
+  26 => 'columns',
+  27 => 'pages',
+  28 => 'row_list',
+  29 => '_page_info',
+  30 => 'primary_key',
+  31 => '_table',
+  32 => 'js_list',
+  33 => 'css_list',
+  34 => 'validate',
+  35 => '_js_files',
+  36 => '_css_files',
+  37 => '_select_list',
+  38 => '_filter_time',
+  39 => 'empty_tips',
+  40 => '_search_area',
+  41 => '_search_area_url',
+  42 => '_search_area_op',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008240s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001892s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.002114s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002416s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001979s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.002382s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.002667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_role` [ RunTime:0.001797s ]
+[ sql ] [ SQL ] SELECT `menu_auth` FROM `dp_admin_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_menu` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT `id`,`url_value` FROM `dp_admin_menu` WHERE  `id` = 0 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id LIMIT 10 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `pid` = 0 ORDER BY sort,id [ RunTime:0.003091s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'user/index/index' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`module`,`title`,`url_value`,`url_type`,`url_target`,`icon`,`params` FROM `dp_admin_menu` WHERE  `status` = 1  AND `module` = 'user' ORDER BY sort,id [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dp_admin_menu` WHERE  `pid` <> 0  AND `url_value` = 'user/index/index' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`url_value` FROM `dp_admin_menu` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT `value` FROM `dp_admin_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_user` [ RunTime:0.003449s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dp_admin_user` LIMIT 1 [ RunTime:0.036701s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_user` ORDER BY sort,id desc LIMIT 0,20 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name` FROM `dp_admin_role` WHERE  `status` >= 0 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/add' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/enable' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/disable' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/delete' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/edit' LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_menu` WHERE  `url_value` = 'user/index/delete' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_attachment` [ RunTime:0.003819s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `dp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000250s ]
