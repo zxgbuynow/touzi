@@ -11,7 +11,9 @@ class Index extends Home
 {
     public function index()
     {
-       exit('index');
-       
+
+        //
+        
+        return $this->fetch(); // 渲染模板
     }
 }

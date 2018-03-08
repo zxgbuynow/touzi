@@ -29,7 +29,7 @@ class Member extends Admin
         $map = $this->getMap();
 
         // 数据列表
-        $data_list = MemberModel::where($map)->order('sort,id desc')->paginate();
+        $data_list = MemberModel::where($map)->order('id desc')->paginate();
 
         // 分页数据
         $page = $data_list->render();
@@ -40,7 +40,7 @@ class Member extends Admin
         return ZBuilder::make('table')
             ->setPageTitle('会员管理') // 设置页面标题
             ->setTableName('member') // 设置数据表名
-            ->setSearch(['id' => 'ID', 'mobile' => '手机号']) // 设置搜索参数
+            ->setSearch(['mobile' => '手机号']) // 设置搜索参数
             ->addColumns([ // 批量添加列
                 ['id', 'ID'],
                 ['mobile', '手机号'],
