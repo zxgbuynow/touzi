@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/index/view/member/login.html";i:1520303968;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/index/view/member/login.html";i:1520524495;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 
@@ -7,8 +7,9 @@
     <title></title>
     <link rel="stylesheet" href="__HOME_CSS__/user.css" />
     <link rel="stylesheet" href="__HOME_CSS__/base.css" />
+    <script type="text/javascript" src="__HOME_JS__/jquery.js"></script>
     <script type="text/javascript" src="__HOME_JS__/require.js"></script>
-    <script type="text/javascript" src="__HOME_JS__/main-user.js"></script>
+    <!-- <script type="text/javascript" charset="UTF-8" src="__HOME_JS__/main-user.js"></script> -->
     <meta name="format-detection" content="telephone=no" />
 </head>
 
@@ -33,8 +34,6 @@
       <div class="error-pr password-text disnone"><p class="f12 cold7">密码格式有误，请重新输入！</p></div>
       </span>
                         <div class="clearfix pb10"></div>
-                        <input type="hidden" name="tokenKey" value="AP6gqFzZxXkctO2M" />
-                        <input type="hidden" name="tokenValue" value="rYoLfL5NCPygGmel" />
                         <a href="javascript:void(0);" class="agreed-to mb15 login">登录</a>
                         <p class="f12 col888"><em>
                         <a href="<?php echo url('Member/modifyPwdFirst'); ?>" class="mr50 col888">忘记密码？</a>没有账户？<a href="<?php echo url('Member/register'); ?>" class="col9d zcbtn">立即注册</a></em>
@@ -47,25 +46,51 @@
             <div class="wrapper">
                 <div class="cp-nav fl">
                     <p>
-                        <a href="/about/brand.html">中投品牌</a><em>|</em>
-                        <a href="/about/value.html">竞争优势</a><em>|</em>
-                        <a href="/about/evaluate.html?flag=1">公司动态</a><em>|</em>
-                        <a href="/about/address.html">联系我们</a>
+                        <?php if(is_array($advlist) || $advlist instanceof \think\Collection || $advlist instanceof \think\Paginator): $k = 0; $__LIST__ = $advlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($k % 2 );++$k;if($k>1): ?><em>|</em><?php endif; ?>
+                        <?php echo $item['content']; endforeach; endif; else: echo "" ;endif; ?>
                     </p>
-                    <span>中投在线 © 版权所有    Copyright 2017 touzi.com , All Rights Reserved<br/>
-      沪ICP备13017629号<em>|</em>投资有风险，购买需谨慎</span></div>
-                <div class="ur-tel fl"><em>中投在线客服服务热线</em>
-                    <p class="f36 mt7 mb8">40000-91888</p>
-                    <em>24小时专属服务</em></div>
-                <div class="focus-my fl">
-                    <h4>关注我们</h4>
-                    <span class="weixin"><i></i><img src="../images/user/erwm.png"/></span><span class="myic"><i></i><img
-                        src="../images/user/erwm2.png"/></span></div>
+                    <span><?php echo $config['web_site_copyright']['value']; ?><br/><?php echo $config['web_site_icp']['value']; ?><em>|</em>投资有风险，购买需谨慎</span>
+                </div>
+                <div class="ur-tel fl"><em>在线客服服务热线</em>
+                    <p class="f36 mt7 mb8">40000-xxxx</p>
+                    <em>24小时专属服务</em>
+                </div>
+                
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
     <!--Footer-->
 </body>
+<script type="text/javascript">
+/***************登录start***********/
+//{code: 0, msg: "用户不存在或被禁用！", data: "", url: "", wait: 3}
+//{code: 1, msg: "用户不存在或被禁用！", data: "", url: "http://zg.touzi.com/index.php/index/member/login.html",…}
+$(document).ready(function(){
+    $(".login").click(function () {
+        if($(".password-text ").is(':visible') || $(".phone-text").is(':visible')){
+            return false;
+        } 
+    
+        var obj = $("#login_form").serialize();
+        var jumpUrl = "<?php echo url('Member/login'); ?>";
+        $.ajax({
+            url: jumpUrl,
+            type: 'post',
+            data: obj,
+            dataType: 'json',
+            success: function (res) {
+                if (res.code == 1) {
+                    alert(res.msg);
+                    window.location.href = "/";
+                }else{
+                    alert(res.msg);
+                } 
+            }
+        })
+    });
+});
 
+/***************登录end***********/
+</script>
 </html>

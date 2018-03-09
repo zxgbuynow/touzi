@@ -331,7 +331,7 @@ $(document).ready(function(){
     $(".login").click(function () {
         if($(".password-text ").is(':visible') || $(".phone-text").is(':visible')){
             return false;
-        }
+        } 
         var href = window.location.href;
         // var flag = $(this).attr('data');
         var tiaozhuan = window.location.pathname;
@@ -340,9 +340,11 @@ $(document).ready(function(){
         }else{
             var flag = 0;
         }
+     
+
         var obj = $("#login_form").serialize();
         var myurl=window.location.search;
-       var jumpUrl = "/user/login.html"+myurl;
+       var jumpUrl = "/member/login.html"+myurl;
         $.ajax({
             url: jumpUrl,
             type: 'post',

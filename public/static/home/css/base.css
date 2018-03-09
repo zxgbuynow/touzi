@@ -723,7 +723,7 @@ text-overflow: -o-ellipsis-lastline ; overflow: hidden;text-overflow: ellipsis;d
 .ldbtn{padding:22px 0 0 0;}
 .ldbtn a{display:inline-block;width:72px;line-height:31px;background:#076ee1;color:#fff;font-size:16px;text-align:center;margin-left:20px;}
 .ldbtn a:hover{color:#fff !important;background:#842125}
-.register{height:680px;background:url(../images/user/landing.jpg) no-repeat center center;}
+.register{height:680px;background:url(../img/landing.jpg) no-repeat center center;}
 .rs-box{padding:0 96px;overflow:hidden;position:absolute;top:0;width:408px;left:50%;height:680px;box-shadow:0 1px 6px rgba(0,0,0,.1);}
 .rs-box h3{line-height:1;padding:82px 0 52px 0;}
 .rs-data span{display:block;border-bottom:1px solid #e9e9e9;height:42px;position:relative;margin-bottom: 27px;}

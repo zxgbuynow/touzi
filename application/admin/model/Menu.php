@@ -206,7 +206,9 @@ class Menu extends Model
         if (!$location) {
             $map['pid'] = ['<>', 0];
             $map['url_value'] = strtolower($model.'/'.trim(preg_replace("/[A-Z]/", "_\\0", $controller), "_").'/'.$action);
-
+            if ($map['url_value']=='admin/index/index') {
+                $map['url_value'] = 'admin/log/index';
+            }
             // 当前操作对应的节点ID
             $curr_id  = $id == '' ? self::where($map)->value('id') : $id;
 

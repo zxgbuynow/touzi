@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>浦定资产首页</title>
+    <meta content="浦定资产" name="keywords">
+    <meta content="浦定资产" name="description">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/base.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index.css">
+    <script type="text/javascript" src="__HOME_JS__/js-cookie.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/require.js" ></script>
+    <script type="text/javascript" src="__HOME_JS__/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__HOME_JS__/main/main.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/book.js"></script>
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="__HOME_JS__/main/main.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/book.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common" src="__HOME_JS__/common.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquerySuperSlide" src="__HOME_JS__/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="highstock" src="__HOME_JS__/highstock.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="placeholder" src="__HOME_JS__/placeholder.js"></script>
+</head> 
+
+<body>
+<!--公共头部-->
+    <div class="t-mn">
+        <div class="wrapper clearfix">
+            <div class="fr f14 relative ldright">
+                <!--登陆前-->
+                {if $_MEMBER}
+                <div class="head-login fl">
+                    <p class="fl">欢迎您，{$_MEMBER['username']}</p>
+                </div>
+                {else /}
+                <div class="head-login fl">
+                    <p class="fl">您好，请<a href="{:url('Member/login')}" class="landing">登录</a><em>|</em></p>
+                    <p class="fl"><a href="{:url('Member/register')}" class="mt2 cold7">免费注册</a><em>|</em></p>
+                </div>
+                {/if}
+                
+                
+                <!--登陆后END-->
+            </div>
+        </div>
+    </div>
+    <!--滚动导航-->
+    <div class="n-nav slideUp disnone">
+        <div class="wrapper"> <img src="__HOME_IMG__/scroll-logo.png" class="fl mt5">
+            <ul class="n-nav-lst f16 tac fl">
+                <li class="fl relative"><a href="./trust/index.html" class="col333">集合信托</a></li>
+                <li class="fl"><a href="./ziguan/index.html" class="col333">集合资管</a></li>
+                <li class="fl"><a href="./zhengfuzhai/index.html" class="col333">私募基金</a></li>
+                <li class="fl"><a href="./ssgsrz/index.html" class="col333 nnav-label">股权定增</a></li>
+                <li class="fl"><a href="./simu/index.html" class="col333">私募债</a></li>
+                <li class="fl"><a href="./vcpe/index.html" class="nnav-label col333">视频中心</a></li>
+                <li class="fl"><a href="./about/index.html" class="nnav-label col333">关于我们</a></li>
+                <li class="fl"><a href="" class="nnav-label col333">在线客服</a></li>
+            </ul>
+            <div class="fr clearfix">
+                <p class="n-nav-nbr f16 col9d fl relative"> <i class="n-nav-icon1 absolute"></i>40000-91888</p>
+            </div>
+        </div>
+    </div>
+    <!--logo部分-->
+    <div class="bgfff">
+        <div class="head wrapper relative clearfix"><a class="fl" href="/"><img src="__HOME_IMG__/tw5o.png" height="60" class="logo"></a>
+            <div class="head-sch fl">
+                <div class="head-sch-mn f14 mb5">
+                    <input name="" type="text" placeholder="请输入搜索关键字" class="head-sch-ipt" maxlength="30" value="">
+                    <div class="head-sshints absolute disnone">
+                        <p></p>
+                    </div>
+                    <input name="" type="button" class="head-btn colfff" value="搜索">
+                </div>
+                <span>
+        <a target="_blank" href="{:url('Product/detail',['id' => 1])}" class="col999 mr20 f12">长春宝成棚改项目</a>
+                <a target="_blank" href="{:url('Product/detail',['id' => 1])}" class="col999 mr20 f12">漯河华鼎定向融资</a>
+        </span>
+            </div>
+            <div class="h-tel fr"><i></i>
+                <p class="f32 col9d">40000-91888</p>
+            </div>
+        </div>
+    </div>
+    <div class="h-menu">
+        <div class="wrapper">
+            <span class="fl f18">
+              <a href="/" class="current">首页</a>
+              <a href="./trust/index.html">集合信托</a>
+              <a href="./ziguan/index.html">集合资管</a>
+              <a href="./zhengfuzhai/index.html" class="relative ">私募基金</a>
+              <a href="./ssgsrz/index.html" class="relative ">股权定增</a>
+              <a href="./simu/index.html">私募基金</a>
+              <a href="./vcpe/index.html">私募债</a>
+              <a href="./vcpe/index.html">视频中心</a>
+              <a href="./about/index.html">关于我们</a>
+              <a href="">在线客服</a>
+            </span>
+        </div>
+    </div>

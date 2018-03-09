@@ -77,12 +77,13 @@ class Page extends Admin
                 ['text', 'title', '页面标题'],
                 ['tags', 'keywords', '页面关键词', '关键字之间用英文逗号隔开'],
                 ['textarea', 'description', '页面描述', '100字左右'],
-                ['text', 'template', '模板文件名'],
+                // ['select', 'type', '类型'],
                 ['ckeditor', 'content', '页面内容'],
                 ['image', 'cover', '单页封面'],
                 ['text', 'view', '阅读量', '', 0],
                 ['radio', 'status', '立即启用', '', ['否', '是'], 1]
             ])
+            ->addSelect('type', '类型', '', ['0' => '普通', '1' => '关于', '2' => '产品' ,'3'=>'注册协议'])
             ->fetch();
     }
 
@@ -123,12 +124,13 @@ class Page extends Admin
                 ['text', 'title', '页面标题'],
                 ['tags', 'keywords', '页面关键词', '关键字之间用英文逗号隔开'],
                 ['textarea', 'description', '页面描述', '100字左右'],
-                ['text', 'template', '模板文件名'],
+                // ['text', 'template', '模板文件名'],
                 ['ckeditor', 'content', '页面内容'],
                 ['image', 'cover', '单页封面'],
                 ['text', 'view', '阅读量', '', 0],
                 ['radio', 'status', '立即启用', '', ['否', '是']]
             ])
+            ->addSelect('type', '类型', '', ['0' => '普通', '1' => '关于', '2' => '产品' ,'3'=>'注册协议'])
             ->setFormdata($info)
             ->fetch();
     }

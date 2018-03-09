@@ -797,13 +797,6 @@ if( $('.pieChart').length>0 ){
 
         //check phone code null
         var phoneCode = $("input[name='verificationCode']").val();
-//        if(phoneCode=='请输入验证码' || phoneCode.length ==0){
-//            $(".phone-code-err p").text('请填写验证码');
-//            $(".phone-code-err").removeClass('disnone');
-//            $(".display-1").addClass('disnone');
-//            $(".display-2").addClass('disnone');
-//            status = 0;
-//        }
         var geeChallenge = $('input[name=geetest_challenge]').val();
         var geeValidate = $('input[name=geetest_validate]').val();
         var geeSeccode = $('input[name=geetest_seccode]').val();

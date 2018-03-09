@@ -1,5 +1,6 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"/data/httpd/touzi/public/../application/index/view/index/index.html";i:1520388563;}*/ ?>
-<html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"/data/httpd/touzi/public/../application/index/view/index/index.html";i:1520501791;s:59:"/data/httpd/touzi/application/index/view/common/header.html";i:1520524663;s:59:"/data/httpd/touzi/application/index/view/common/footer.html";i:1520501799;}*/ ?>
+    
+    <html>
 
 <head>
     <title>浦定资产首页</title>
@@ -12,20 +13,35 @@
     <script type="text/javascript" src="__HOME_JS__/js-cookie.js"></script>
     <script type="text/javascript" src="__HOME_JS__/require.js" ></script>
     <script type="text/javascript" src="__HOME_JS__/jquery.js"></script>
-    <script type="text/javascript" charset="utf-8" src="__HOME_JS__/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__HOME_JS__/main/main.js"></script>
     <script type="text/javascript" src="__HOME_JS__/book.js"></script>
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="__HOME_JS__/main/main.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/book.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common" src="__HOME_JS__/common.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquerySuperSlide" src="__HOME_JS__/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="highstock" src="__HOME_JS__/highstock.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="placeholder" src="__HOME_JS__/placeholder.js"></script>
 </head> 
 
 <body>
-    <!--公共头部-->
+<!--公共头部-->
     <div class="t-mn">
         <div class="wrapper clearfix">
             <div class="fr f14 relative ldright">
                 <!--登陆前-->
+                <?php if($_MEMBER): ?>
+                <div class="head-login fl">
+                    <p class="fl">您好，<?php echo $_MEMBER['username']; ?></p>
+                </div>
+                <?php else: ?>
                 <div class="head-login fl">
                     <p class="fl">您好，请<a href="<?php echo url('Member/login'); ?>" class="landing">登录</a><em>|</em></p>
                     <p class="fl"><a href="<?php echo url('Member/register'); ?>" class="mt2 cold7">免费注册</a><em>|</em></p>
                 </div>
+                <?php endif; ?>
+                
+                
                 <!--登陆后END-->
             </div>
         </div>
@@ -60,8 +76,8 @@
                     <input name="" type="button" class="head-btn colfff" value="搜索">
                 </div>
                 <span>
-        <a target="_blank" href="./product/product-2435.html" class="col999 mr20 f12">长春宝成棚改项目</a>
-                <a target="_blank" href="./product/product-2491.html" class="col999 mr20 f12">漯河华鼎定向融资</a>
+        <a target="_blank" href="<?php echo url('Product/detail',['id' => 1]); ?>" class="col999 mr20 f12">长春宝成棚改项目</a>
+                <a target="_blank" href="<?php echo url('Product/detail',['id' => 1]); ?>" class="col999 mr20 f12">漯河华鼎定向融资</a>
         </span>
             </div>
             <div class="h-tel fr"><i></i>
@@ -85,7 +101,6 @@
             </span>
         </div>
     </div>
-
     <!--banner-->
     <div class="bnr relative slideBox1">
         <ul class="bnr-lst absolute" style="position: relative; width: 1280px; height: 480px;">
@@ -416,7 +431,7 @@
             <a href="/feedback/index" target="_blank"><i class="rico2"></i></a>
             <p><i class="rico3"></i><em>回顶部</em></p>
         </div>
-
+        
         <!--foot-->
         <div class="foot">
             <div class="wrapper">
@@ -469,3 +484,4 @@
 </body>
 
 </html>
+    
