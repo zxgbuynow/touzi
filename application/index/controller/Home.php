@@ -30,8 +30,11 @@ class Home extends Common
         $this->assign('static_dir', $base_dir. 'public/static/');
 
         //用户信息
+        
         if ($this->is_login()) {
             $this->assign('_MEMBER', $this->is_login());
+        }else{
+            $this->assign('_MEMBER', null);
         }
         //最热产品
         $hotItem = db('cms_item')->where(1)->order('view DESC')->limit(2)->select();
