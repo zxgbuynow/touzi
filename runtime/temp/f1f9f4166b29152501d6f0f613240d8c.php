@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/mobile/view/index/index.html";i:1520672168;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/mobile/view/index/index.html";i:1520674934;}*/ ?>
 <html style="font-size: 37.5px;">
 
 <head>
@@ -106,9 +106,9 @@
             </a>
             </li>
             <li>
-                <a href="club.html">
+                <a href="<?php echo url('Member/login'); ?>">
                 <span class="home-title-icon icon-hyjlb"></span>
-                <i class="f24 col222">会员俱乐部</i>
+                <i class="f24 col222">我的</i>
             </a>
             </li>
             <li>
@@ -348,7 +348,7 @@
         </ul>
         <section class="clear18"></section>
         <!-- 关于我们-->
-        <a href="/about/brand.html"><img src="__M_IMG__/home-pic4.jpg"></a>
+        <a href="<?php echo url('About/detail',['id' => 1]); ?>"><img src="__M_IMG__/home-pic4.jpg"></a>
         <!--Footer-->
         <section class="footer tac">
             <p class="f22">中投在线 © 版权所有 Copyright 2017 touzi.com</p>
@@ -413,7 +413,7 @@
     <script type="text/javascript" src="__M_JS__/swiper.min.js"></script>
     <script type="text/javascript" src="__M_JS__/common.js?v=1.2"></script>
     <script type="text/javascript" src="__M_JS__/book.js?v=1.2"></script>
-    <script type="text/javascript" src="__M_JS__/index.js?v=1.2"></script>
+    <script type="text/javascript" src="__M_JS__/index.js?v=1.2" charset="utf-8"></script>
 </body>
 
 </html>

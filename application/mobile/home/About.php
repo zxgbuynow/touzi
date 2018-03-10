@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\index\controller;
+namespace app\mobile\home;
 use \think\Request;
 /**
  * About控制器

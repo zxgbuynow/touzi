@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"/data/httpd/touzi/public/../application/mobile/view/product/index.html";i:1520672470;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"/data/httpd/touzi/public/../application/mobile/view/product/index.html";i:1520672494;}*/ ?>
 <html style="font-size: 37.5px;"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <title>信托产品大全_信托产品收益率排行榜 - 手机中投在线</title>
     <meta name="keywords" content="信托理财产品，信托产品大全，信托产品收益率，最新信托理财产品">
@@ -216,7 +216,7 @@ f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=
   <input type="hidden" name="totalPage" value="18">
     <section class="mn-cover disnone"></section>
       <!-- 合格投资者认证 -->
-      <section class="pop-qualified disnone">
+      <<!-- section class="pop-qualified disnone">
         <h3 class="f42 colfff tac qual-h3 relative">合格投资者认证<i class="mn-popclose icon-pop-colse"></i></h3>
         <div class="quali-mn">
           <p class="f36 col222 quali-p1">根据《信托公司集合资金信托计划管理办法》《私募投资基金监督管理暂行办法》之规定,只向特定投资者展示私募基金和信托资管产品信息，不构成任何投资推介建议。您需要进行身份认证后才能访问。</p>
@@ -224,7 +224,7 @@ f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=
           <p class="mt20 clearfix quali-p3"><input type="checkbox" checked="checked"><span class="f26 col222">本人承诺符合上述特定的合格投资者条件</span></p>
         </div>
         <div class="quali-mnc f36 tac clearfix relative"><a href="/user/register.html">去认证</a><i></i><a href="/user/login.html">已有账号去登录</a></div>
-      </section>
+      </section> -->
         <script type="text/javascript">
     $(document).ready(function(){
         $(window).scroll(function () {

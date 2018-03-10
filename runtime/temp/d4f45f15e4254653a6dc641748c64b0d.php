@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"/data/httpd/touzi/public/../application/mobile/view/about/detail.html";i:1520674221;}*/ ?>
 
 <!DOCTYPE HTML>
 <html>

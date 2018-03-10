@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"/data/httpd/touzi/public/../application/mobile/view/member/register.html";i:1520676105;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -48,7 +49,7 @@
     <section class="mail-head tac f40 colfff">
         <a href="" class="icon-fh user-fh"></a>
         注册
-        <a href="{:url('Member/login')}" class="f32 fp-sign">登录</a>
+        <a href="<?php echo url('Member/login'); ?>" class="f32 fp-sign">登录</a>
     </section>
     <!--main-->
     <section class="reg-midmain">
@@ -286,15 +287,7 @@
             dataType:'json',
             type:'post',
             success:function(oData){
-                if(oData.result){//验证通过
-                    $('.reg-cover').hide();
-//                    $('.get-code').addClass("disnone");
-//                    $('.resend').css("display","block");
-                    var o = $('.get-code');
-                    var wait = 60;
-                    time(o,wait);
-                    _requestPhoneCode(phone);
-                }else{
+                if(oData.result)else{
                     $(".code-error").show();
                     return false;
                 }
