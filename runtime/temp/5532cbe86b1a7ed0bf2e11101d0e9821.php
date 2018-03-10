@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"/data/httpd/touzi/public/../application/index/view/index/index.html";i:1520501791;s:59:"/data/httpd/touzi/application/index/view/common/header.html";i:1520666016;s:59:"/data/httpd/touzi/application/index/view/common/footer.html";i:1520666016;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"/data/httpd/touzi/public/../application/index/view/index/index.html";i:1520690241;s:59:"/data/httpd/touzi/application/index/view/common/header.html";i:1520666016;s:59:"/data/httpd/touzi/application/index/view/common/footer.html";i:1520666016;}*/ ?>
     
     <html>
 
@@ -126,7 +126,7 @@
                 <li class="clearfix relative">
                     <div class="brlr">
                         <h3 class="f16 mb5 bar-shhover1 col333">信托产品</h3>
-                        <p class="bar-sd-lst fl"><a href="/trust/productlist-uf3.html#anchor" target="_blank">基础设施</a><a href="/trust/productlist-uf1.html#anchor" target="_blank" class="relative bar-label">房地产</a></p>
+                        <p class="bar-sd-lst fl"><a href="<?php echo url('Product/index',['id' => 1]); ?>" target="_blank">基础设施</a><a href="/trust/productlist-uf1.html#anchor" target="_blank" class="relative bar-label">房地产</a></p>
                         <i class="bar-sd-rotate"></i>
                         <!--展开第一种形式-->
                         <div class="absolute bar-main bar-xtzg disnone" style="display: none;">
