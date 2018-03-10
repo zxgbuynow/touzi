@@ -13007,3 +13007,832 @@
 [ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000526s ]
 [ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000626s ]
 [ sql ] [ SQL ] SELECT * FROM `dp_cms_item` [ RunTime:0.000236s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:13:11+08:00 ] 10.0.2.2 GET /
+[ info ] zg.touzi.com/ [运行时间：0.661258s][吞吐率：1.51req/s] [内存消耗：1,231.90kb] [文件加载：69]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.136981s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.048969s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/httpd/touzi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/index/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010865s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002605s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.004436s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001614s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.010052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.002095s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001508s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.001523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.001393s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:14:12+08:00 ] 10.0.2.2 GET /
+[ info ] zg.touzi.com/ [运行时间：0.620632s][吞吐率：1.61req/s] [内存消耗：1,231.90kb] [文件加载：69]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.121064s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.049846s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/httpd/touzi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/index/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003597s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001916s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.001749s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000794s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:14:24+08:00 ] 10.0.2.2 GET /index.php/search
+[ info ] zg.touzi.com/index.php/search [运行时间：0.554948s][吞吐率：1.80req/s] [内存消耗：851.51kb] [文件加载：59]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'search',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.134520s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.055734s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002579s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.003214s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.002282s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001813s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:14:39+08:00 ] 10.0.2.2 GET /index.php/index/search/index
+[ info ] zg.touzi.com/index.php/index/search/index [运行时间：0.596020s][吞吐率：1.68req/s] [内存消耗：1,199.07kb] [文件加载：68]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.116357s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.050390s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Search->index[ /data/httpd/touzi/application/index/controller/Search.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/index/view/search/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003730s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.004002s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.002102s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.002311s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001609s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000218s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:15:03+08:00 ] 10.0.2.2 GET /index.php/search
+[ info ] zg.touzi.com/index.php/search [运行时间：0.645219s][吞吐率：1.55req/s] [内存消耗：851.51kb] [文件加载：59]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'search',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.145487s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.049119s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010831s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002035s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.002149s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.003649s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:15:05+08:00 ] 10.0.2.2 GET /
+[ info ] zg.touzi.com/ [运行时间：0.625147s][吞吐率：1.60req/s] [内存消耗：1,231.90kb] [文件加载：69]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.147465s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.045528s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/httpd/touzi/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/index/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004191s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001772s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.004992s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.004535s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.002696s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.003729s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.001396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.002871s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.003940s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:16:18+08:00 ] 10.0.2.2 GET /index.php/index/search/index.html
+[ info ] zg.touzi.com/index.php/index/search/index.html [运行时间：0.630516s][吞吐率：1.59req/s] [内存消耗：1,197.45kb] [文件加载：68]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'search',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; __utmb=180515372.2.10.1520690309; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.146104s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.047351s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Search->index[ /data/httpd/touzi/application/index/controller/Search.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/index/view/search/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004696s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002901s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.002111s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.001911s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:35:02+08:00 ] 10.0.2.2 GET /mobile.php
+[ info ] zg.touzi.com/mobile.php [运行时间：0.622131s][吞吐率：1.61req/s] [内存消耗：1,223.05kb] [文件加载：67]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520676162; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.127144s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.045658s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\mobile\home\Index->index[ /data/httpd/touzi/application/mobile/home/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/mobile/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009447s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002051s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001940s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.001784s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.003807s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000975s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:35:17+08:00 ] 10.0.2.2 GET /mobile.php
+[ info ] zg.touzi.com/mobile.php [运行时间：0.624750s][吞吐率：1.60req/s] [内存消耗：1,221.45kb] [文件加载：67]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520692503',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.122559s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.058885s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\mobile\home\Index->index[ /data/httpd/touzi/application/mobile/home/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/mobile/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007602s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.001640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002058s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.001572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.002174s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001793s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.002127s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.004693s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000265s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:35:20+08:00 ] 10.0.2.2 GET /mobile.php
+[ info ] zg.touzi.com/mobile.php [运行时间：0.485206s][吞吐率：2.06req/s] [内存消耗：1,221.45kb] [文件加载：67]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520692518',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.095377s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.063080s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\mobile\home\Index->index[ /data/httpd/touzi/application/mobile/home/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/mobile/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003284s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.001692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.001956s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.002076s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.004073s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.002060s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.003492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.002960s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.003551s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.003474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.001703s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-03-10T22:35:25+08:00 ] 10.0.2.2 GET /mobile.php
+[ info ] zg.touzi.com/mobile.php [运行时间：0.408775s][吞吐率：2.45req/s] [内存消耗：1,221.71kb] [文件加载：67]
+[ info ] [ LANG ] /data/httpd/touzi/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'zg.touzi.com',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'UM_distinctid=16078e033a5938-08e173aa09221f-173c6d56-13c680-16078e033a6876; __utmc=254390029; PHPSESSID=mm0im330fo44avos48ap0uat80; OUTFOX_SEARCH_USER_ID_NCOO=1084441046.6739905; thinkphp_show_page_trace=0|0; Hm_lvt_601c92cd729f5d300329945382cb791f=1520306400; Hm_lvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520306402; Hm_lvt_39b5ed0bf4174a1437be8378251e78d0=1520308870,1520490090; __utmc=180515372; __utmz=180515372.1520520991.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); dolphin_home___forward__=%2Fadmin.php%2Fcms%2Fcontent%2Farticle.html; pgv_pvi=2649234432; pgv_si=s1355790336; __utmz=254390029.1520674211.6.2.utmcsr=zg.touzi.com|utmccn=(referral)|utmcmd=referral|utmcct=/mobile.php/about/detail/id/1.html; ___rl__test__cookies=1520675039710; __utma=254390029.1426007444.1520306400.1520674211.1520676185.7; __utma=180515372.1307008823.1520520991.1520666517.1520690309.4; CNZZDATA1254779168=1383481035-1520516792-%7C1520688657; Hm_lpvt_601c92cd729f5d300329945382cb791f=1520690424; Hm_lpvt_c3d6eaa135e0c7778dc8a6c73a86db89=1520690424; Hm_lpvt_39b5ed0bf4174a1437be8378251e78d0=1520692521',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Config @app_begin [ RunTime:0.101004s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Hook @app_begin [ RunTime:0.049277s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'dolphin_admin_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\mobile\home\Index->index[ /data/httpd/touzi/application/mobile/home/Index.php ]
+[ info ] [ VIEW ] /data/httpd/touzi/public/../application/mobile/view/index/index.html [ array (
+  0 => 'static_dir',
+  1 => '_MEMBER',
+  2 => 'hotItem',
+  3 => 'nav',
+  4 => 'link',
+  5 => 'config',
+  6 => 'about',
+  7 => 'service',
+  8 => 'news',
+  9 => 'lunbo',
+  10 => 'category',
+  11 => 'video',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=127.0.0.1;port=3306;dbname=touzi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_config` [ RunTime:0.002333s ]
+[ sql ] [ SQL ] SELECT `name`,`value`,`type` FROM `dp_admin_config` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_module` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT `name`,`config` FROM `dp_admin_module` WHERE  `config` <> '' [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook` [ RunTime:0.002670s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_hook` WHERE  `status` = 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_plugin` [ RunTime:0.001941s ]
+[ sql ] [ SQL ] SELECT `name`,`status` FROM `dp_admin_plugin` WHERE  `status` = 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_admin_hook_plugin` [ RunTime:0.001591s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_hook_plugin` WHERE  `status` = 1 ORDER BY hook,sort [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_item` [ RunTime:0.001546s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` ORDER BY view DESC LIMIT 2 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_menu` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_menu` WHERE  `pid` = 0 LIMIT 6 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_link` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_link` WHERE  `type` = 1 LIMIT 10 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_admin_config` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_page` [ RunTime:0.005465s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 1 LIMIT 4 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 2 LIMIT 4 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_page` WHERE  `type` = 3 LIMIT 4 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_advert` [ RunTime:0.001193s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_advert` WHERE  `tagname` = 'home' [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_category` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_category` WHERE  `pid` = 0 ORDER BY sort desc LIMIT 5 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_recommon` = 1  AND `cate_id` IN (7) LIMIT 1 [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dp_cms_video` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_video` ORDER BY id DESC LIMIT 4 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `dp_cms_item` WHERE  `is_hot` = 1 [ RunTime:0.000246s ]
