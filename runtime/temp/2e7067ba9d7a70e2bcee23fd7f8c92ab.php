@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"/data/httpd/touzi/public/../application/mobile/view/member/login.html";i:1520675800;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -48,7 +49,7 @@
     <section class="mail-head tac f40 colfff">
         <a href="javascript:history.go(-1);" class="icon-fh user-fh"></a>
         登录
-        <a href="{:url('Member/register')}" class="f32 fp-sign">注册</a>
+        <a href="<?php echo url('Member/register'); ?>" class="f32 fp-sign">注册</a>
     </section>
 
     <!--main-->
@@ -76,7 +77,7 @@
                 <p class="reg-error f26 coldf0000 absolute pwd-error disnone"><em class="icon-user-ty"></em>请输入6-16位数字字母组合密码</p>
             </div>
             <button class="fd-minnextstop f36 tac login-submit">登录</button>
-            <p class="tac mt30"><a href="{:url('Member/modifyPwdFirst')}" class="f32 colaa090d">忘记密码？</a></p>
+            <p class="tac mt30"><a href="/user/forgetPwd-1.html" class="f32 colaa090d">忘记密码？</a></p>
         </form>
     </div>
     </section>

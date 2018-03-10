@@ -1,5 +1,103 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"/data/httpd/touzi/public/../application/index/view/index/index.html";i:1520501791;s:59:"/data/httpd/touzi/application/index/view/common/header.html";i:1520666016;s:59:"/data/httpd/touzi/application/index/view/common/footer.html";i:1520666016;}*/ ?>
     
-    {include file="index@common/header" /}
+    <html>
+
+<head>
+    <title>浦定资产首页</title>
+    <meta content="浦定资产" name="keywords">
+    <meta content="浦定资产" name="description">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/base.css">
+    <link rel="stylesheet" type="text/css" href="__HOME_CSS__/index.css">
+    <script type="text/javascript" src="__HOME_JS__/js-cookie.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/require.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="__HOME_JS__/main/main.js"></script>
+    <script type="text/javascript" src="__HOME_JS__/book.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common" src="__HOME_JS__/common.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquerySuperSlide" src="__HOME_JS__/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="highstock" src="__HOME_JS__/highstock.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="placeholder" src="__HOME_JS__/placeholder.js"></script>
+</head> 
+
+<body>
+<!--公共头部-->
+    <div class="t-mn">
+        <div class="wrapper clearfix">
+            <div class="fr f14 relative ldright">
+                <!--登陆前-->
+                <?php if($_MEMBER): ?>
+                <div class="head-login fl">
+                    <p class="fl">欢迎您，<?php echo $_MEMBER['username']; ?></p>
+                </div>
+                <?php else: ?>
+                <div class="head-login fl">
+                    <p class="fl">您好，请<a href="<?php echo url('Member/login'); ?>" class="landing">登录</a><em>|</em></p>
+                    <p class="fl"><a href="<?php echo url('Member/register'); ?>" class="mt2 cold7">免费注册</a><em>|</em></p>
+                </div>
+                <?php endif; ?>
+                
+                
+                <!--登陆后END-->
+            </div>
+        </div>
+    </div>
+    <!--滚动导航-->
+    <div class="n-nav slideUp disnone">
+        <div class="wrapper"> <img src="__HOME_IMG__/tw5o.png" class="fl hlogo">
+            <ul class="n-nav-lst f16 tac fl">
+                <li class="fl relative"><a href="./trust/index.html" class="col333">集合信托</a></li>
+                <li class="fl"><a href="./ziguan/index.html" class="col333">集合资管</a></li>
+                <li class="fl"><a href="./zhengfuzhai/index.html" class="col333">私募基金</a></li>
+                <li class="fl"><a href="./ssgsrz/index.html" class="col333 nnav-label">股权定增</a></li>
+                <li class="fl"><a href="./simu/index.html" class="col333">私募债</a></li>
+                <li class="fl"><a href="./vcpe/index.html" class="nnav-label col333">视频中心</a></li>
+                <li class="fl"><a href="./about/index.html" class="nnav-label col333">关于我们</a></li>
+                <li class="fl"><a href="" class="nnav-label col333">在线客服</a></li>
+            </ul>
+            <div class="fr clearfix">
+                <p class="n-nav-nbr f16 col9d fl relative"> <i class="n-nav-icon1 absolute"></i>40000-91888</p>
+            </div>
+        </div>
+    </div>
+    <!--logo部分-->
+    <div class="bgfff">
+        <div class="head wrapper relative clearfix"><a class="fl" href="/"><img src="__HOME_IMG__/tw5o.png" height="60" class="logo"></a>
+            <div class="head-sch fl">
+                <div class="head-sch-mn f14 mb5">
+                    <input name="" type="text" placeholder="请输入搜索关键字" class="head-sch-ipt" maxlength="30" value="">
+                    <div class="head-sshints absolute disnone">
+                        <p></p>
+                    </div>
+                    <input name="" type="button" class="head-btn colfff" value="搜索">
+                </div>
+                <span>
+        <a target="_blank" href="<?php echo url('Product/detail',['id' => 1]); ?>" class="col999 mr20 f12">长春宝成棚改项目</a>
+                <a target="_blank" href="<?php echo url('Product/detail',['id' => 1]); ?>" class="col999 mr20 f12">漯河华鼎定向融资</a>
+        </span>
+            </div>
+            <div class="h-tel fr"><i></i>
+                <p class="f32 col9d">40000-91888</p>
+            </div>
+        </div>
+    </div>
+    <div class="h-menu">
+        <div class="wrapper">
+            <span class="fl f18">
+              <a href="/" class="current">首页</a>
+              <a href="./trust/index.html">集合信托</a>
+              <a href="./ziguan/index.html">集合资管</a>
+              <a href="./zhengfuzhai/index.html" class="relative ">私募基金</a>
+              <a href="./ssgsrz/index.html" class="relative ">股权定增</a>
+              <a href="./simu/index.html">私募基金</a>
+              <a href="./vcpe/index.html">私募债</a>
+              <a href="./vcpe/index.html">视频中心</a>
+              <a href="./about/index.html">关于我们</a>
+              <a href="">在线客服</a>
+            </span>
+        </div>
+    </div>
     <!--banner-->
     <div class="bnr relative slideBox1">
         <ul class="bnr-lst absolute" style="position: relative; width: 1280px; height: 480px;">
@@ -28,7 +126,7 @@
                 <li class="clearfix relative">
                     <div class="brlr">
                         <h3 class="f16 mb5 bar-shhover1 col333">信托产品</h3>
-                        <p class="bar-sd-lst fl"><a href="{:url('Product/index',['id' => 1])}" target="_blank">基础设施</a><a href="/trust/productlist-uf1.html#anchor" target="_blank" class="relative bar-label">房地产</a></p>
+                        <p class="bar-sd-lst fl"><a href="/trust/productlist-uf3.html#anchor" target="_blank">基础设施</a><a href="/trust/productlist-uf1.html#anchor" target="_blank" class="relative bar-label">房地产</a></p>
                         <i class="bar-sd-rotate"></i>
                         <!--展开第一种形式-->
                         <div class="absolute bar-main bar-xtzg disnone" style="display: none;">
@@ -331,5 +429,56 @@
             <p><i class="rico3"></i><em>回顶部</em></p>
         </div>
         
-        {include file="index@common/footer" /}
+        <!--foot-->
+        <div class="foot">
+            <div class="wrapper">
+                <div class="fnav cole7">
+                    <div class="fttxt fl">
+                        <dl>
+                            <dt><a href="./about/brand.html" target="_blank">关于我们</a></dt>
+                            <dd>
+                                <a href="./about/brand.html" target="_blank">公司介绍</a>
+                                <a href="./about/news.html" target="_blank">公司动态</a>
+                                <a href="./about/system.html" target="_blank">风控体系</a>
+                                <a href="./about/address.html" target="_blank">联系我们</a>
+                            </dd>
+                        </dl>
+                        <dl class="pdlr">
+                            <dt><a href="/trust/">产品及服务</a></dt>
+                            <dd><a href="/trust/">信托资管</a><a href="/simu/">阳光私募</a><a href="/vcpe/">私募股权</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="./news/" target="_blank">新闻资讯</a></dt>
+                            <dd><a href="./news/list-t1-classId-76-cid-21.html" target="_blank">中投研究院</a><a href="./news/list-t1-classId-21-cid-22.html" target="_blank">理财学院</a><a href="/zixun/" target="_blank">中投百科</a></dd>
+                        </dl>
+                    </div>
+                    <div class="fl ftel"><span><img src="__HOME_IMG__/tw5o.png" style="width: 50px;height: 50px;"></span><em class="f12">在线客服服务热线</em>
+                        <p class="f36">40000-91888</p>
+                        <em class="colf2">24小时专属服务</em></div>
+                    <!-- <div class="fr erwm"><span class="mr48"><img src="__HOME_IMG__/wx.png" style="width:112px;height:112px;"><em>微信公众号</em></span><span><img src="__HOME_IMG__/pc.png" style="width:112px;height:112px;"><em>手机客户端</em></span></div> -->
+                </div>
+                <div class="fcopy up-txt">
+                    <p class="fl">友情链接：
+                        <a target="_blank" href="http://contract.58btc.com/index.html"> 58BTC</a>
+                        <a target="_blank" href="https://www.tuandai.com/"> 团贷网</a>
+                        <a target="_blank" href="http://www.528btc.com/"> 币界网</a>
+                        <a target="_blank" href="http://www.trjcn.com/"> 投融资平台</a>
+                        <a target="_blank" href="http://www.xinhehui.com"> 互联网投资</a>
+                        <a target="_blank" href="http://www.anxin.com/ask/"> 安心贷理财</a>
+                        <a target="_blank" href="http://www.qianzhan.com/indynews/"> 财经资讯</a>
+                        <a target="_blank" href=""> </a>
+                        <a target="_blank" href=""> </a>
+                    </p>
+                    <i class="fr upbtn"></i></div>
+                <div class="cpright cole7">
+                    <p class="fl">浦定投资 © 版权所有 Copyright 2017 puding.com , All Rights Reserved
+                        <br> 沪ICP备13017629号 沪公网安备 31011002001486号<em>|</em>投资有风险，购买需谨慎</p>
+                    <span class="fr"><img src="__HOME_IMG__/fpic3.jpg"><img src="__HOME_IMG__/fpic4.jpg"><img src="__HOME_IMG__/fpic5.jpg"></span></div>
+            </div>
+        </div>
+    </div>    
+    <div id="cli_dialog_div"></div>
+</body>
+
+</html>
     

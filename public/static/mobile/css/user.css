@@ -1,0 +1,266 @@
+/* 
+* @Author: Administrator
+* @Date:   2017-11-13 09:33:50
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-12-07 14:34:24
+*/
+.footer{margin-bottom: 0;}
+.bgf5{ background: #f5f5f5}
+.m-page.bgf5{min-height: 18rem;}
+.bgfff{ background: #fff}
+.colff532a{ color: #ff532a}
+.col68{ color: #686868}
+.colb2{ color: #b2b2b2}
+.col7a{ color: #7a7a7a}
+.col006cff{ color: #006cff !important; }
+.col97{ color: #979797}
+.col0ea692{ color: #0ea692; }
+.colb7{ color: #b7b7b7 !important}
+.coldf0000{color: #df0000 !important}
+.colc09f69{color: #c09f69}
+.colaa090d{ color: #aa090d !important}
+.col000{color: #000 !important}
+.bold{ font-weight: bold; }
+.mt20{margin-top: 0.27rem !important}
+.user-head{ height: 1.15rem; background: url(../img/top.jpg) no-repeat; background-size: 100% 100%; line-height: 1.15rem; position:absolute; left: 0; top:-1.15rem; width: 100%; z-index: 5}
+.user-fh{ position: absolute; top: 0.29rem; left: 0.4rem}
+.user-nt{ position: absolute; top: 0.29rem; right: 1.25rem; font-size:0.59rem}
+.icon-xx{ position: absolute; top: 0.29rem; right:0.4rem; font-size:0.59rem}
+.user-banner{ padding: 0.07rem 0.4rem 0.84rem 0.4rem; background: url(../img/user-ban.jpg) no-repeat; background-size: 100% 100%; margin-top: 1.15rem; }
+.user-grade img{ width: 0.93rem; height: 0.93rem}
+.user-assets span{ display: block; height: 1.47rem; line-height: 1.47rem; }
+.assets-dis{ height: 1.77rem; background: url(../img/assets-dis.jpg) no-repeat; background-size: 100% 100%}
+.assets-dis p{ float: left; width: 33.3%}
+.assets-dis span{ font-size: 0.4rem; display: block; height:0.9rem; line-height:0.9rem; }
+.assets-dis em{ font-size: 0.32rem}
+.ad-member{ padding: 0.27rem 0.87rem; background: #fff; border-top:1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6}
+.mem-img img{ width: 3.44rem; height: 2.05rem}
+.my-investment{ background: #fff; border-top:1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; }
+.my-investment h3{ padding-left: 0.4rem; height: 1.32rem; line-height: 1.32rem; }
+.inven-list li a{ display: block; border-top: 1px solid #e6e6e6; padding:0.32rem 0.4rem; }
+.inven-list i{ font-size: 0.64rem; margin-right:0.4rem; }
+.inven-list span{ font-size: 0.45rem; color: #222}
+.inven-list em{ font-size:0.4rem; margin-top: 0.13rem; }
+
+/*个人中心-已登录*/
+.user-grade1{ position: relative; height: 0.93rem; line-height: 0.93rem; }
+.user-grade1 img{ position: absolute; width: 0.93rem; height: 0.93rem; top: 0.07rem; left: 0.4rem}
+.inven-list em.col999{ margin-top:0.04rem; }
+.inven-list1 li:first-child a{ border-top: none; } 
+
+/*问题与反馈*/
+.problem{ height: 1.15rem; background: url(../img/home-head.jpg) no-repeat; background-size: 100% 100%; line-height: 1.15rem; position:absolute; left: 0; top:0; width: 100%; z-index: 5}
+.problem-main{ padding: 1.57rem 0.4rem 0.5rem 0.4rem}
+.pro-notice{ border: 1px solid #e6e6e6; background: #fff; padding: 0.27rem 0.4rem; }
+.pro-notice textarea{ height:2.51rem; border: 0; width: 100%; line-height: 0.56rem; border-radius: 0}
+.pro-contract{ padding: 0.67rem 0.4rem; border: 1px solid #e6e6e6; background: #fff}
+.pro-leave{ display: block; height: 1.17rem; line-height: 1.17rem; border: 1px solid #d0d0d0; width: 100%; margin:0.53rem 0; text-indent: 0.4rem; border-radius: 0}
+.pro-submit{ width: 100%; display: block; background: #aa090d; height: 1.07rem; line-height: 1.07rem; border-radius: 0.07rem; border: none; }
+.pro-explain{ line-height: 0.72rem; }
+/*消息中心*/
+.news-main{ padding-top: 1.15rem; }
+.news-tab{ height: 1.25rem; line-height: 1.25rem; background: #fff}
+.news-tab span{ float:left; width: 50%; border-bottom: 1px solid #e6e6e6}
+.news-tab span.on{ color: #222; border-bottom:2px solid #aa090d}
+.inven-news{ background: #fff; padding: 0 0.4rem}
+.invennews-ul li{ padding:0.53rem 0 0.27rem 0; border-bottom: 1px solid #e6e6e6}
+.invennews-ul .icon-fh:before { color: #5f87d8; font-size:0.48rem}
+.invennews-ul i{ transform:rotate(-90deg); margin-right: 0.25rem; }
+.invennewsmn{ line-height: 0.56rem; }
+.intextover{ height:1.07rem; text-overflow: -o-ellipsis-lastline; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.invennews-ul li.on i{ transform:rotate(90deg); }
+.invennews-read p{ color: #b2b2b2 !important}
+.invennews-read div{ color: #b2b2b2 !important}
+.invennews-read .icon-fh:before { color: #b2b2b2; }
+.invennews-only{ padding: 0.53rem; color: #979797; background: #f5f5f5}
+.inven-nonews { padding: 4rem 0}
+.inven-nonews img{ width:3.56rem; height: 3.75rem}
+.inven-nonews p{ font-size: 0.48rem; color: #c6c6c6; margin-top: 0.27rem; }
+/*资金明细*/
+.detail-tab{ height: 1.25rem; line-height: 1.25rem; background: #fff; color: #686868}
+.detail-tab span{ float:left; width:33.3%; border-bottom: 1px solid #e6e6e6}
+.detail-tab span.on{ color: #222; border-bottom:2px solid #aa090d}
+.all-detail{ border-top: 1px solid #e6e6e6; background: #fff; margin-bottom: 0.4rem;min-height: 13rem;}
+.all-detailul li{ padding: 0.53rem 0.4rem; border: 1px solid #e6e6e6; border-top: none; }
+.all-detailul h3{ font-weight: normal; max-width:5.33rem}
+.detail-nonews{ padding: 2.47rem 0}
+.detail-nonews img{ width: 3.55rem; height: 3.73rem}
+/*绑定成功*/
+.mail-head{ height: 1.15rem; background: url(../img/home-head.jpg) no-repeat; background-size: 100% 100%; line-height: 1.15rem; position:absolute; left: 0; top:0; width: 100%; z-index: 5}
+.mail-headright{ position: absolute; right:0.4rem; top: 0.32rem; font-size:0.51rem}
+.mailsucc-main{ padding: 2.0rem 0.4rem 10.67rem 0.4rem}
+.mailsucc-mn{ padding: 0.32rem 0; border: 1px solid #cdcdcd; background: #fff}
+.mailsucc-mn em{ width: 1.54rem; height: 0.5rem; margin-right:0.54rem; line-height: 0.5rem; color: #a58748; background: #faf4e8}
+.mailsucc-mn input{ height: 0.5rem; line-height: 0.5rem; border: none; width: 5.5rem; font-size: 0.43rem; color: #b7b7b7; text-indent: 0.27rem}
+.mailsucc-mn i{ font-size:0.48rem; margin:0 0 0 0.27rem; padding-right: 0.27rem; border-right: 1px solid #cdcdcd}
+/*绑定邮箱*/
+.mail-verifi{ height: 1.2rem; line-height: 1.2rem; background: #d18486; margin-top: 0.67rem; display: block; border: 0; border-radius: 0.07rem; width: 100%}
+.bdmail-main{ padding:2.0rem 0.4rem 8.67rem 0.4rem}
+/*验证邮箱*/
+.bdmail-main input{ color: #222}
+.mail-yz{ height: 1.2rem; line-height: 1.2rem; background: #aa090d; margin-top: 0.67rem; display: block; border: 0; border-radius: 0.07rem; width: 100%}
+/*实名认证*/
+.relname-main{ padding:2.0rem 0.4rem 8.8rem 0.4rem}
+.relname-mn{ padding: 0.32rem 0; border: 1px solid #cdcdcd; background: #fff;position: relative;margin-bottom: 0.45rem;}
+.relname-mn i{ font-size:0.48rem; margin:0 0 0 0.27rem; padding-right: 0.27rem; border-right: 1px solid #cdcdcd}
+.relname-mn input{ height: 0.5rem; line-height: 0.5rem; border: none; width: 5.5rem; font-size: 0.43rem; color: #b7b7b7; text-indent: 0.27rem}
+.relname-next{ height: 1.2rem; line-height: 1.2rem; background: #aa090d; margin-top: 0.67rem; display: block; border: 0; border-radius: 0.07rem; width: 100%}
+/*实名认证 成功*/
+.succrealname{ padding: 3.12rem 0.4rem; background: #fff}
+.succrealname img{ width: 2.41rem; height: 2.41rem}
+.succrealname-back{ display: block; width: 6.67rem; height: 1.2rem; line-height: 1.2rem; 
+    background: #aa090d; margin: 0.67rem auto 0 auto; color: #fff !important; 
+    border-radius: 0.07rem}
+/*实名认证 上传照片*/
+.realname-uppic{ padding: 1.84rem 0.4rem 1.07rem 0.4rem}
+.uppic-1{ width: 4.31rem;position: relative;}
+.uppic-1 p{ padding: 0.36rem 0; background: #f4f8fe; border-radius: 0.07rem 0.07rem 0 0;
+}
+.uppic-1 p img{width: 3.24rem;height: 2.16rem;}
+.uppic-1 em{ height: 0.8rem; line-height: 0.8rem; color: #fff !important; background: #aa090d; border-radius: 0 0 0.07rem 0.07rem; display: block; }
+.rename-upmn{ padding: 0.4rem 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
+.rename-upmn img{ height: 2.01rem}
+.rename-upmna{ height: 1.2rem; line-height: 1.2rem; 
+    background: #aa090d; display: block; border: 0; border-radius: 0.07rem;
+     width: 100%; margin: 0.4rem auto 0 auto; color: #fff !important; }
+.uppicmn{width:100%;height:100%;position: absolute;top: 0;left:0;
+background-size: 100% 100%;opacity: 0;}
+/*修改密码*/
+.modi-passwordmn{ padding:2rem 0.4rem 6.67rem 0.4rem; }
+.passmodi-app{ width: 8.0rem; height: 2.4rem; line-height: 2.4rem; background: rgba(0,0,0,0.7); position: fixed; z-index: 6; left: 50%; margin-left: -4.0rem; top: 50%; margin-top: -1.2rem; border-radius: 0.07rem}
+/*个人资料-认证失败*/
+.reauth-a{display: block;width:6.64rem; height:1.17rem; line-height:1.17rem; 
+    background: #fff; margin: 0.67rem auto 0 auto; color: #aa090d !important; 
+    border-radius: 0.07rem;border: 1px solid #aa090d}
+/* 个人资料-未实名*/
+.per-data{padding:0.53rem 0 1.07rem 0;background: url(../images/user/user-ban.jpg) no-repeat;
+background-size: 100% 100%;margin-top: 1.15rem;}
+.per-data img{width: 1.61rem;height: 1.63rem}
+.persval-second{padding:0.4rem 0;background: url(../images/user/assets-dis.jpg) no-repeat;
+background-size: 100% 100%;}
+.persval-second div.fl{width: 49.9%;border-right: 1px solid #d46c6e}
+.persval-second .icon-hjhy:before{color: #fff;margin: 0 0.28rem 0 1.61rem}
+.persval-second div.fr{width:49.8%}
+.persval-second .icon-user-gx:before{color: #fff;margin: 0 0.28rem 0 0.8rem}
+.persval-menu{background: #fff;border-top: 1px solid #e6e6e6;}
+.persvalmenu-ul li{padding: 0.35rem 0.4rem;border-bottom: 1px solid #e6e6e6;}
+.persvalmenu-ul i{font-size: 0.64rem;margin-right: 0.4rem;}
+.persvalmenu-ul h3{line-height: 0.64rem;}
+.persvalmenu-ul a{color: #686868 !important;height: 0.43rem;line-height: 0.43rem;margin-top: 0.11rem;}
+.persvalmenu-ul em{font-size: 0.4rem;margin-left:0.2rem;}
+.persvalmenu-tmail{width: 4.5rem;display: block;}
+.persval-sout{height: 1.19rem;line-height: 1.19rem;border-top: 1px solid #e6e6e6;
+background: #fff;color: #e85757 !important;display: block;margin-bottom:2.67rem}
+/*个人资料-已实名*/
+.per-dataname{padding:0.53rem 0}
+.per-dataname span{display: block;}
+.persvalmenu-ul span{color: #686868}
+/*信托资管-持有中*/
+.xtzg-notice{position: absolute;top: 0.29rem;right:0.4rem;font-size: 0.59rem;}
+.xt-ownban{padding: 1.07rem 0;background: url(../images/user/user-ban.jpg) no-repeat;
+background-size: 100% 100%;margin-top: 1.15rem;}
+.xtown-data{padding: 0.4rem 0;background: url(../images/user/assets-dis.jpg) no-repeat;
+background-size: 100% 100%;}
+.xtown-data p{width: 33.3%}
+.xtown-data span{display: block;}
+.xtown-data em{display: block;margin-top: 0.07rem;}
+
+.xtown-tab{ height: 1.25rem; line-height: 1.25rem; background: #fff; color: #686868}
+.xtown-tab span{ float:left; width:50%; border-bottom: 1px solid #e6e6e6;border-top: 1px solid #e6e6e6;}
+.xtown-tab span.on{ color: #222; border-bottom:2px solid #aa090d;font-weight: bold;}
+.xtown-tabmn{margin-top: 3px;}
+.xtown-ul li{background: #fff;margin-bottom: 0.27rem;border-top: 1px solid #e6e6e6;}
+.xtown-ul li h3{height: 1.31rem;line-height: 1.31rem;padding:0 0.4rem;}
+.xtownpro-con{padding: 0.4rem;border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6}
+.xtownpro-con p{margin:0.13rem 0 0 0}
+.xtown-nodata{padding: 1.57rem 0 2.93rem 0;background: #fff}
+.xtown-nodata img{width: 1.87rem;height: 1.51rem}
+/*阳光私募－持有中*/
+.ygsm-zadd{display: inline-block;color: #fe8b1b !important;border: 1px solid #fe8b1b;
+    width: 1.23rem;height: 0.56rem;
+border-radius:0.27rem;line-height:0.56rem;margin-right: 0.32rem;}
+.ygsm-sback{display: inline-block;color: #369aeb !important;border: 1px solid #369aeb;
+    width: 1.23rem;height: 0.56rem;
+border-radius:0.27rem;line-height:0.56rem;}
+.ygsmown-ul  .xtownpro-con{padding: 0.4rem 0.4rem 0.8rem 0.4rem;border-top: 1px solid #e6e6e6;border-bottom: none;}
+/*我的服务1*/
+.myserv-main{padding: 2.17rem 0.4rem 0.53rem 0.4rem}
+.myserv-h3{font-weight: bold !important;}
+.myserv-h3 em{font-weight: bold !important;}
+.myservfirst-ul{margin: 1.07rem 0}
+.myservfirst-ul div{width: 7.4rem}
+.myservfirst-ul p{margin-top: 0.13rem;}
+.myservfirst-ul i{font-size:1.4rem;margin-top: 0.15rem;}
+.myservfirst-ul li{margin-bottom: 0.8rem}
+.myservfirst-a{display: block;color: #fff !important;height: 1.2rem;line-height: 1.2rem;
+background: #c09f69;border-radius: 0.07rem}
+/*我的服务－未分配理财师*/
+.mysv-head{height: 5.77rem;background: url(../images/user/my-service.jpg) no-repeat;
+background-size: 100% 100%;position: relative;}
+.mysvtop-head{position: relative;height: 1.15rem;line-height: 1.15rem;}
+.mysvtopmn{padding: 1.57rem 0 0 1.47rem;line-height:0.8rem;}
+.mysv-main{padding:0.8rem 0.4rem}
+.mysv-main-ul{}
+.mysv-main-ul div{width: 7.4rem}
+.mysv-main-ul i{font-size:1.2rem;margin: 0.15rem 0.27rem 0 0.27rem;}
+.mysv-main-ul li{margin-bottom: 0.8rem}
+/*我的服务-已分配理财师*/
+.mysvtop-finiplanner{position: absolute;bottom:1px;right:0.96rem}
+.mysvtop-finiplanner img{width: 4.01rem;height: 4.33rem;}
+/*找回登录密码*/
+.fp-sign{color: #fff !important;position: absolute;top: 0.6rem;right: 0.4rem;line-height:0;}
+.fp-midmain{padding: 1.87rem 0.4rem 5.33rem 0.4rem}
+.fd-midmn{padding: 0.32rem 0;border: 1px solid #cdcdcd;background: #fff;margin-bottom:0.5rem;position: relative;}
+.fd-midmn input{height: 0.5rem;line-height: 0.5rem;border: none;
+width:6.4rem;font-size: 0.43rem;color: #b7b7b7;text-indent: 0.37rem;}
+.fd-midmn i{font-size: 0.48rem;margin: 0 0 0 0.37rem;
+ padding-right: 0.37rem;border-right: 1px solid #cdcdcd;}
+.spfd-midmn .fd-midmn input{width:4.25rem}
+.fd-midresend{color: #686868 !important;border: 1px solid #cdcdcd;background: #e8e8e8;
+height: 1.14rem;line-height: 1.14rem;width: 3.24rem}
+.fd-midtime{color: #fff !important;border: 1px solid #f88a31;background: #ffaf44;
+height: 1.14rem;line-height: 1.14rem;width: 3.44rem}
+.fd-minnextstop{height: 1.2rem;line-height: 1.2rem;
+background: #aa090d;margin-top:0.6rem;display: block;border: 0;border-radius: 0.07rem;
+width: 100%;color: #fff !important}
+/*注册成功*/
+.user-reglogo img{width: 4.28rem;height: 2.0rem}
+.fd-midcheckbox{-webkit-appearance: checkbox;margin-right: 0.2rem;}
+.reg-midmain{padding: 1.87rem 0.4rem 0 0.4rem}
+.reg-bm{color: #b31c27;margin-top: 2.0rem;}
+.reg-error{left: 0;bottom: -0.5rem;width: 100%;}
+.reg-error em{margin: 0 0.2rem;}
+.reg-cover{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position:fixed;z-index: 5;
+top: 0;left: 0;display: none;}
+.reg-pop{position: fixed;z-index: 6;background: #fff;width: 7.97rem;height: 5.57rem;left: 50%;
+margin-left:-3.995rem;margin-top:-2.795rem;top: 50%;border-radius: 0.13rem;
+border:0.01rem solid #dcdcdc}
+.reg-popmn{padding: 0.57rem}
+.reg-popclose{font-size: 0.8rem;position: absolute;top: 0.08rem;
+right: 0.08rem}
+.reg-popclose:before{color: #b5b5b5}
+.reg-popmn input{width: 4.31rem;height: 1.17rem;line-height: 1.17rem;border: 1px solid #aa090d;
+text-indent: 0.48rem}
+.reg-popmn img{width: 2.08rem;height: 1.2rem}
+.reg-popmn h3{font-weight: bold !important;}
+.regpop-error em{margin: 0 0.2rem 0 0;}
+.regpop-submit{height: 1.2rem !important;line-height: 1.2rem !important;
+background: #aa090d;display: block;border: 0 !important;border-radius: 0.07rem;
+width: 100% !important;color: #fff !important;text-indent: 0 !important}
+.fd-midmn.s-error{border: 1px solid #aa090d}
+/*登录页面*/
+.sin-errormn{padding: 0.07rem 0.4rem;background: #ff7200;line-height: 0.48rem;}
+.sin-midmain{padding-top: 1.15rem}
+.sin-mn{padding: 0.93rem 0.4rem 3rem 0.4rem}
+/*设置密码*/
+.sin-main{padding: 1.87rem 0.4rem 5rem 0.4rem}
+
+
+
+
+
+
+
+
+
+
