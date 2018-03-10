@@ -1,0 +1,109 @@
+/*Head*/
+.home-head{height: 1.17rem;line-height: 1.17rem;background: url(../img/home-head.jpg) no-repeat;background-size: 100% 100%;}
+.home-logo{width: 3.72rem;margin: 0.13rem 0 0 0.37rem;}
+.home-ss{display: block;font-size: 0.53rem;margin: 0.32rem 0.4rem 0 0;}
+
+/*Banner*/
+.home-swiper img{width: 10rem;height: 3.73rem;}
+.swiper-pagination-bullets{position:absolute; right:0.6rem; bottom:0.24rem; z-index:4; zoom:1;}
+.swiper-pagination-bullets span{ float: left; margin:0 0.06rem; width:0.18rem; height:0.18rem; cursor:pointer; border-radius:50%; background: #fff; }
+.swiper-pagination-bullet-active{background: #ed311d !important;}
+
+/*Home-title*/
+.home-title{margin-top: 0.46rem;height: 4.5rem;overflow: hidden;}
+.home-title li{width: 25%;float: left;height: 2.32rem;}
+.home-title-icon{font-size: 1.06rem;}
+.home-title i{display: block;line-height: 1rem;}
+.clear18{height: 0.24rem;clear: both;background: #f5f5f5;border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;}
+.home-tt{line-height: 1.2rem;padding: 0 0.4rem;border-bottom: 1px solid #e6e6e6;}
+
+/*热点投资*/
+.home-hot{padding: 0.26rem 0.4rem 0 0.4rem;}
+.home-hot-img{width: 100%;height: 2.4rem;margin-bottom: 0.4rem;}
+
+/*加息福利*/
+.home-vipIncreases{background: #f5f5f5;padding-left: 0.4rem;width: 9.6rem;border-bottom: 1px solid #e6e6e6;}
+.home-vipIncreases-swiper{padding: 0.24rem 0;}
+.home-vipIncreases-swiper li{height: 4.6rem;background: url(..../img/home-icon4.jpg) repeat-x;background-size: auto 100%;box-shadow:#e7e5e4 0 0 5px;overflow: hidden;}
+.home-vipIncreases-tt{color: #c66229;line-height: 1.06rem;margin: 0 0.13rem;}
+.home-vipIncreases-labe{background: #ffaf44;border: 1px solid #f88a31;padding: 0 0.06rem;}
+.home-vipIncreases-nbr{font-size: 0.8rem;color: #aa090d;line-height: 1;}
+.home-vipIncreases-text{color: #a58748;}
+.home-vipIncreases-explain{border-bottom: 1px solid #d2ac5e;border-top: 1px solid #d2ac5e;color: #a58748;line-height: 0.65rem;margin: 0.26rem 0.4rem;}
+.home-vipIncreases-explain span{width: 49%;}
+.home-vipIncreases-explain span.fl{border-right: 1px dashed #d2ac5e;}
+
+/*信托资管*/
+.home-lst li{margin: 0 0.4rem;padding: 0.33rem 0;border-bottom: 1px solid #e6e6e6;}
+.home-lst li:last-child{border: none;}
+.home-lst-tt{line-height: 0.73rem;}
+.home-lst-tt span{color: #a58748;background: #faf4e8;padding: 0 0.13rem;margin-left: 0.26rem;}
+.home-lst-mnc-sd{width: 4.9rem;border-right: 1px dashed #d3d3d3;}
+.home-lst-mnc-sd-doc{color: #aa090d;font-size: 0.8rem; line-height: 1;}
+.home-lst-mnc-sdc{width: 3.22rem;}
+.home-lst-mnc-sd-text{color: #686868;}
+
+/*精选视频*/
+.home-video{background: #f5f5f5;padding: 0.26rem 0 0.26rem 0.4rem;}
+.home-video li{float: left;background: #fff;width: 4.48rem;height: 3.57rem;margin-right: 0.26rem;}
+.home-video-pic{width: 100%;height: 2.66rem;}
+.home-video-icon{top:50%;left: 50%;margin: -0.42rem 0 0 -0.42rem;width: 0.85rem;}
+.home-news li{padding: 0.4rem 0;margin:0 0.4rem;height: 2rem;border-bottom: 1px solid #e6e6e6;}
+.home-news li:last-child{border: none;}
+.home-news-img{width: 2.69rem;height: 2rem;}
+.home-news-sdc{width: 6.13rem;height: 2rem;}
+.home-news-tt{height: 1.01rem;line-height: 0.5rem;}
+.home-news-text{color: #939393;line-height: 1;width: 100%;bottom: 0;left: 0;}
+
+/*搜索 头部*/
+.ss-head{width: 10rem;height: 1.17rem;background: #aa090d;position:fixed;z-index: 1000;left: 50%;top: 0;margin-left: -5rem;}
+.ss-mn{min-height: 12rem;padding: 1.17rem 0 1.92rem 0;}
+.ss-head-sd{background: #8c0000;border-radius: 0.04rem;width: 8rem;height: 0.8rem;margin-top: 0.18rem}
+.ss-head-ipt{line-height: 0.8rem;background: none;text-indent: 0.16rem;color: #ccc;font-size: 0.42rem;width: 6.86rem;border: none;}
+.ss-head-return{width: 1.6rem;line-height: 1.17rem;color: #fff !important;}
+
+/*搜索 默认状态*/
+.ss-mn-prompt{margin: 0.66rem 0.4rem;}
+.ss-mn-prompt-lst a{border: 1px solid #adadad;border-radius: 3px;margin: 0 0.26rem 0.26rem 0;display: inline-block;line-height: 0.96rem;padding: 0 0.24rem;float: left;}
+
+/*搜索无结果*/
+.ss-no-img{margin: 1.33rem 0 0.46rem 0;width: 2.68rem;}
+
+/*搜索结果列表页*/
+.ss-result-lstTab{width: 10rem;position:fixed;z-index: 1000;left: 50%;top: 1.17rem;margin-left: -5rem;background: #fff;}
+.ss-result-lstTab p{display: block;width: 33%;line-height: 1.3rem;color: #686868;border-bottom: 1px solid #e6e6e6;}
+.ss-result-lstTab p.on{color: #222;border-bottom: 2px solid #aa090d;}
+.ss-result-lst{margin-top: 1.17rem;}
+.ss-result-lst li{padding: 0.4rem;border-bottom: 1px solid #e6e6e6;}
+.ss-result-lst-load{color: #686868;background: #f5f5f5;line-height: 1.09rem;}
+
+/*搜索 底部*/
+.ss-footer{background: none;margin: 0;width: 100%;left: 0;bottom: 0;}
+
+/*关于我们*/
+.abouts-back{display: block;font-size: 0.53rem;top: 0.32rem;left: 0.4rem;}
+.abouts-top{background: url(..../img/about-by.jpg) no-repeat;background-size: 100% 100%;height: 8.53rem;}
+.abouts-logo{width: 2.08rem;}
+.abouts-tt{font-weight: bold;line-height: 1;margin: 0.2rem 0.4rem;}
+.abouts-tt-bor{width: 0.1rem;background: #aa090d;border-radius: 0.05rem;height: 0.48rem;}
+.abouts-scope{padding: 0 0.4rem;background: url(..../img/about-scopeBy.jpg) no-repeat 0 0;background-size: 100% 100%;}
+.abouts-scope li{background: #fff;padding: 0.33rem 0;box-shadow: 0 0 5px #ddd;margin-bottom: 0.26rem;border-radius: 0.12rem;}
+.abouts-scope-img{width: 1.46rem;margin-left: 0.53rem;}
+.abouts-scope-sdc{width: 6.69rem;}
+.abouts-scope-sdc span{display: inline-block;margin-right: 0.66rem;}
+.abouts-scope-sdc-doc span{width: 50%;float: left;margin: 0;}
+.byF5{background: #f5f5f5;}
+.home-honor-swiper li{width: 4rem;height: 8.66rem; background: #fff;}
+.abouts-history{margin:0.26rem 0.33rem 0.26rem 0.72rem;border-left: 1px solid #aa090d;padding-left: 0.5rem;}
+.abouts-history h4{display: inline-block;background: #aa090d;line-height: 0.53rem;padding: 0 0.24rem;border-radius: 0.26rem;}
+.abouts-history-listStyle{width: 0.24rem;height: 0.24rem;border: 1px solid #aa090d;top: 0.12rem;left: -0.65rem;background: #fff;border-radius: 0.12rem;}
+.abouts-history dt .abouts-history-listStyle{background: #aa090d;}
+.abouts-history dd{margin: 0.2rem 0;}
+.abouts-history dd p{margin-bottom: 0.26rem;}
+.colbu{color: #006cff;}
+.abouts-go{display: block;width: 5.3rem;line-height: 0.77rem;border: 1px solid #cdcdcd;background: #f5f5f5;border-radius: 0.38rem;margin: 0.4rem auto 0 auto;}
+.abouts-nbr{background: #aa090d;color: #fff;padding: 0 0.15rem;border-radius: 50%;margin-right: 0.06rem;}
+
+
+
+

@@ -32,7 +32,7 @@ class Index extends Home
         //hot product
         $hotItem = db('cms_item')->where('is_hot',1)->select();
         
-
+        // print_r($category);exit;
         $this->assign('lunbo', $lunbo);
         $this->assign('category', $category);
         $this->assign('video', $video);
