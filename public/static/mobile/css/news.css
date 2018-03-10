@@ -1,0 +1,144 @@
+/*Head*/
+.news-head{line-height: 1.17rem;background: url(../img/home-head.jpg) no-repeat;background-size: 100% 100%;}
+.news-back{display: block;font-size: 0.53rem;top: 0.32rem;left: 0.4rem;}
+.news-hyqy{display: block;font-size: 0.53rem;top: 0.32rem; right:0.4rem;}
+.clear18{height: 0.24rem;clear: both;background: #f5f5f5;border-top: 1px solid #e6e6e6;border-bottom: 1px solid #e6e6e6;}
+
+/*发现首页 */
+.news-tts{line-height: 1.2rem;padding: 0 0.4rem;border-bottom: 1px solid #e6e6e6;}
+.news-home-title li{width: 25%;float: left;height: 2.32rem;}
+.news-home-title-icon{font-size: 1.06rem;}
+.news-home-title i{display: block;line-height: 1rem;}
+
+/*发现首页 热点投资*/
+.home-hot{padding: 0.26rem 0.4rem 0 0.4rem;}
+.home-hot-img{width: 100%;height: 2.4rem;margin-bottom: 0.4rem;}
+
+/*发现首页 精选视频*/
+.home-video{background: #f5f5f5;padding: 0.26rem 0 0.26rem 0.4rem;}
+.home-video li{float: left;background: #fff;width: 4.48rem;height: 3.57rem;margin-right: 0.26rem;}
+.home-video-pic{width: 100%;height: 2.66rem;}
+.home-video-icon{top:50%;left: 50%;margin: -0.42rem 0 0 -0.42rem;width: 0.85rem;}
+.home-news li{padding: 0.4rem 0;margin:0 0.4rem;height: 2rem;border-bottom: 1px solid #e6e6e6;}
+.home-news li:last-child{border: none;}
+.home-news-img{width: 2.69rem;height: 2rem;}
+.home-news-sdc{width: 6.13rem;height: 2rem;}
+.home-news-tt{height: 1.01rem;line-height: 0.5rem;}
+.home-news-text{color: #939393;line-height: 1;width: 100%;bottom: 0;left: 0;}
+
+/*会员俱乐部 */
+.news-vip-top{height: 7.21rem;background: url(../img/news-vip-top.jpg) no-repeat;background-size: 100% 100%;}
+.news-vip-head{width: 2.37rem;height: 2.08rem;margin-top: 0.37rem;}
+.news-vip-top-lst li{width: 2.53rem;float: left;}
+.news-vip-top-lst li:last-child{width: 2rem;}
+.news-vip-top-icon{width: 1.06rem;height: 1.06rem;margin: 0 auto; background: url(../img/news-vip-icon3.png) no-repeat;background-size: 100% 100%;}
+.news-vip-top-icon span{font-size: 0.42rem;margin-top: 0.33rem;display: block;}
+.news-vip-top-icon span:before{color: #fff !important;}
+.news-vip-top-lst p{color: #686868;}
+.news-vip-top-line{width: 1.46rem;height: 0.1rem;background: url(../img/news-vip-icon1.png) no-repeat;background-size: 100% 100%;top:0.53rem;right: -0.73rem;}
+.news-vip-top-lst li.on .news-vip-top-icon{background: url(../img/news-vip-icon4.png) no-repeat;background-size: 100% 100%;}
+.news-vip-top-lst li.on p{color: #222;}
+.news-vip-top-lst li.on .news-vip-top-line{background: url(../img/news-vip-icon2.png) no-repeat;background-size: 100% 100%;}
+
+/*会员俱乐部 Title*/
+.news-tt{line-height: 1.2rem;padding: 0 0.4rem;border-bottom: 1px solid #e6e6e6; font-size: 0.48rem;}
+.news-tt span{border-left: 0.05rem solid #aa090d;padding-left: 0.2rem;}
+.news-tt-more{margin-top: 0.49rem;font-size: 0.34rem;}
+
+/*会员俱乐部  线下活动*/
+.news-vip-offline{background: #fff;}
+.news-vip-swiper img{width: 10rem;height: 3.73rem;}
+.swiper-pagination-bullets{position:absolute;left: 0; bottom:0; z-index:4; zoom:1;width: 100%;text-align: center;}
+.swiper-pagination-bullets span{display: inline-block; margin:0 0.06rem; width:0.18rem; height:0.18rem; cursor:pointer; border-radius:50%; background: rgba(255,255,255,0.5); }
+.swiper-pagination-bullet-active{background:rgba(255,255,255,1) !important;}
+
+/*会员俱乐部 新手专享*/
+.news-vip-lst{min-height: 12rem;}
+.news-vip-lst li{margin: 0 0.4rem;padding: 0.33rem 0;border-bottom: 1px solid #e6e6e6;}
+.news-vip-lst li:last-child{border: none;}
+.news-vip-lst-tt{line-height: 0.73rem;}
+.news-vip-lst-tt span{color: #a58748;background: #faf4e8;padding: 0 0.13rem;margin-left: 0.26rem;}
+.news-vip-lst-mnc-sd{width: 4.9rem;border-right: 1px dashed #d3d3d3;}
+.news-vip-lst-mnc-sd-doc{color: #aa090d;font-size: 0.8rem; line-height: 1;}
+.news-vip-lst-mnc-sdc{width: 3.22rem;}
+.news-vip-lst-mnc-sd-text{color: #686868;}
+
+/*会员俱乐部 会员等级说明*/
+.news-vip-explain{line-height: 1.7;}
+
+/*身份权益 */
+.news-identity-head{line-height: 1.17rem;background:#aa090d;}
+.news-identity-top{height: 5.58rem;background: url(../img/news-identity-top.jpg) no-repeat;background-size: 100% 100%;}
+.news-identity-top-mnc{padding: 1.13rem 0.73rem 0 0.73rem;}
+.news-identity-top-sd{margin-left: 0.42rem;}
+.news-identity-top-sd img{width: 1.06rem;height: 1.06rem;}
+.news-identity-top-sd-doc{min-width: 4.1rem;text-align: left;line-height: 1.3;}
+.news-identity-top-sdc{margin-right: 0.42rem;text-align: left;}
+.news-identity-top-sdc span:before{color: #906d40 !important;}
+.news-identity-top-lst li{width: 25%;float: left;}
+.news-identity-top-icon{width: 1.06rem;height: 1.06rem;margin: 0 auto; background: url(../img/news-vip-icon3.png) no-repeat;background-size: 100% 100%;}
+.news-identity-top-icon span{font-size: 0.42rem;margin-top: 0.33rem;display: block;}
+.news-identity-top-icon span:before{color: #fff !important;}
+.news-identity-top-lst p{color: #686868;}
+.news-identity-top-line{width: 1.46rem;height: 0.1rem;background: url(../img/news-vip-icon1.png) no-repeat;background-size: 100% 100%;top:0.53rem;right: -0.73rem;}
+.news-identity-top-lst li.on .news-identity-top-icon{background: url(../img/news-vip-icon4.png) no-repeat;background-size: 100% 100%;}
+.news-identity-top-lst li.on p{color: #c66229;}
+.news-identity-top-lst li.on .news-identity-top-line{background: url(../img/news-vip-icon2.png) no-repeat;background-size: 100% 100%;}
+
+/*身份权益  黄金会员身份权益*/
+.news-prodetail-doc{padding: 0.4rem;}
+.news-prodetail-module.on .news-prodetail-doc{display: block;}
+.news-prodetail-module.on .news-tt-more{transform: rotate(-90deg);}
+.news-prodetail-module.grade i:before{color: #dadada;}
+
+/*百科知识 私募*/
+.encyclopedia-top-tt a{display: block;float: left;line-height: 1.3rem;width: 20%;border-bottom: 0.02rem solid #e6e6e6;color: #686868;}
+.encyclopedia-top-tt a.on{color: #222;border-bottom: 0.05rem solid #aa090d;font-weight: bold;line-height: 1.28rem;}
+.encyclopedia-top-fx{color: #5f87d8;border: 1px solid #5f87d8;background: #e4edff;padding: 0 0.16rem;}
+.encyclopedia-top-doc p{max-height: 1.44rem;overflow: hidden;}
+.encyclopedia-top-doc span{transform: rotate(90deg);display: inline-block;}
+.encyclopedia-top-doc span:before{color: #5f87d8;}
+.encyclopedia-top-doc.on p{max-height: 100%;}
+.encyclopedia-top-doc.on span{transform: rotate(-90deg);}
+.load-more{background: #f5f5f5;line-height: 3;}
+
+/*热门专题*/
+.hot-topics-lst span{display: block;float: left;line-height: 1.3rem;width: 50%;border-bottom: 0.02rem solid #e6e6e6;color: #686868;}
+.hot-topics-lst span.on{color: #222;border-bottom: 0.05rem solid #aa090d;font-weight: bold;line-height: 1.28rem;}
+.hot-topics-sd{margin: 0 0.4rem;}
+.hot-topics-sd li{margin-top: 0.4rem;border-bottom: 1px solid #e6e6e6;text-align: center;}
+.hot-topics-sd li:last-child{border: none;}
+.hot-topics-sd img{height:6.11rem; width:9.2rem;}
+.hot-topics-sd p{line-height: 0.93rem;}
+
+/*视频解说*/
+.video-sd{margin: 0 0.4rem;}
+.video-sd li{margin-top: 0.4rem;border-bottom: 1px solid #e6e6e6;}
+.video-sd li:last-child{border: none;}
+.video-sd p{line-height: 0.93rem;}
+.video-pic{width: 9.2rem;height: 5.46rem;}
+.video-icon{top:50%;left: 50%;margin: -0.53rem 0 0 -0.53rem;width: 1.06rem;}
+.video-box{min-height: 12rem;}
+
+/*中投研究*/
+.xtzg-lstAll-classify-swiper li{width: auto !important;display: block;}
+.review-swiper li{line-height: 1.3rem;border-bottom: 0.02rem solid #e6e6e6;color: #686868;}
+.review-swiper li.on{color: #222;border-bottom: 0.05rem solid #aa090d;font-weight: bold;}
+
+/*文章详情页*/
+.news-related{padding: 0 0.4rem;}
+.news-related a{line-height: 1.33rem;}
+.news-related li{border-bottom: 1px solid #e6e6e6;}
+.news-related li:last-child{border: none;}
+.article-box h1{line-height: 1.2;}
+.article-doc{margin: 0.33rem 0 0.5rem 0;border-top: 1px solid #e6e6e6;padding-top: 0.33rem;}
+.article-doc p{margin:0.42rem 0;line-height: 0.58rem;}
+.article-topic{height: 2.4rem; width: 9.2rem;}
+
+
+
+
+
+
+
+

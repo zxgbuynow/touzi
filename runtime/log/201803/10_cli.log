@@ -1,0 +1,2 @@
+[ 2018-03-10T15:29:52+08:00 ][ error ] [2]include(/data/httpd/touzi/application/build.php): failed to open stream: No such file or directory[/data/httpd/touzi/thinkphp/library/think/console/command/Build.php:46]
+[ info ] [ LOG ] INIT File
