@@ -24,7 +24,7 @@
 /*加息福利*/
 .home-vipIncreases{background: #f5f5f5;padding-left: 0.4rem;width: 9.6rem;border-bottom: 1px solid #e6e6e6;}
 .home-vipIncreases-swiper{padding: 0.24rem 0;}
-.home-vipIncreases-swiper li{height: 4.6rem;background: url(..../img/home-icon4.jpg) repeat-x;background-size: auto 100%;box-shadow:#e7e5e4 0 0 5px;overflow: hidden;}
+.home-vipIncreases-swiper li{height: 4.6rem;background: url(../img/home-icon4.jpg) repeat-x;background-size: auto 100%;box-shadow:#e7e5e4 0 0 5px;overflow: hidden;}
 .home-vipIncreases-tt{color: #c66229;line-height: 1.06rem;margin: 0 0.13rem;}
 .home-vipIncreases-labe{background: #ffaf44;border: 1px solid #f88a31;padding: 0 0.06rem;}
 .home-vipIncreases-nbr{font-size: 0.8rem;color: #aa090d;line-height: 1;}
@@ -82,11 +82,11 @@
 
 /*关于我们*/
 .abouts-back{display: block;font-size: 0.53rem;top: 0.32rem;left: 0.4rem;}
-.abouts-top{background: url(..../img/about-by.jpg) no-repeat;background-size: 100% 100%;height: 8.53rem;}
+.abouts-top{background: url(../img/about-by.jpg) no-repeat;background-size: 100% 100%;height: 8.53rem;}
 .abouts-logo{width: 2.08rem;}
 .abouts-tt{font-weight: bold;line-height: 1;margin: 0.2rem 0.4rem;}
 .abouts-tt-bor{width: 0.1rem;background: #aa090d;border-radius: 0.05rem;height: 0.48rem;}
-.abouts-scope{padding: 0 0.4rem;background: url(..../img/about-scopeBy.jpg) no-repeat 0 0;background-size: 100% 100%;}
+.abouts-scope{padding: 0 0.4rem;background: url(../img/about-scopeBy.jpg) no-repeat 0 0;background-size: 100% 100%;}
 .abouts-scope li{background: #fff;padding: 0.33rem 0;box-shadow: 0 0 5px #ddd;margin-bottom: 0.26rem;border-radius: 0.12rem;}
 .abouts-scope-img{width: 1.46rem;margin-left: 0.53rem;}
 .abouts-scope-sdc{width: 6.69rem;}
