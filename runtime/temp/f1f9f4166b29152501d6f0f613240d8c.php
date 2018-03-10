@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/mobile/view/index/index.html";i:1520671737;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"/data/httpd/touzi/public/../application/mobile/view/index/index.html";i:1520672168;}*/ ?>
 <html style="font-size: 37.5px;">
 
 <head>
@@ -76,7 +76,7 @@
         <!--Title-->
         <ul class="home-title tac clearfix col222">
             <li>
-                <a href="productList.html">
+                <a href="<?php echo url('Product/index',['id' => 1]); ?>">
                 <span class="home-title-icon icon-zfz"></span>
                 <i class="f24 col222">政府债</i>
             </a>
@@ -409,11 +409,11 @@
         <ins class="lxb-cb-input-feedback" style="display: none;"></ins>
     </ins>
     <script src="https://hm.baidu.com/hm.js?39b5ed0bf4174a1437be8378251e78d0"></script>
-    <script type="text/javascript" src="__HOME_JS__/zepto.min.js"></script>
-    <script type="text/javascript" src="__HOME_JS__/swiper.min.js"></script>
-    <script type="text/javascript" src="__HOME_JS__/common.js?v=1.2"></script>
-    <script type="text/javascript" src="__HOME_JS__/book.js?v=1.2"></script>
-    <script type="text/javascript" src="__HOME_JS__/index.js?v=1.2"></script>
+    <script type="text/javascript" src="__M_JS__/zepto.min.js"></script>
+    <script type="text/javascript" src="__M_JS__/swiper.min.js"></script>
+    <script type="text/javascript" src="__M_JS__/common.js?v=1.2"></script>
+    <script type="text/javascript" src="__M_JS__/book.js?v=1.2"></script>
+    <script type="text/javascript" src="__M_JS__/index.js?v=1.2"></script>
 </body>
 
 </html>

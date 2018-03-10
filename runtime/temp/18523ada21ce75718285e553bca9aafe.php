@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"/data/httpd/touzi/public/../application/mobile/view/product/detail.html";i:1520672516;}*/ ?>
 <html style="font-size: 37.5px;"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <title>华鑫信托·鑫享7号 - 信托产品 – 手机中投在线</title>
     <meta name="keywords" content="华鑫信托·鑫享7号">

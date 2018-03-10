@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\index\controller;
+namespace app\mobile\home;
 
 
 use \think\Request;
@@ -14,8 +14,13 @@ class Product extends Home
 {
     public function index()
     {
-
-        $items = db('cms_item')->select();
+        $request = Request::instance();
+        $params = $request->param();
+        if (!$params['id']) {
+            $this->error('参数错误！');return;
+            return $this->fetch('common/error'); // 渲染模板
+        }
+        $items = db('cms_item')->where('cate_id',$params['id'])->select();
 
         $this->assign('items', $items);
         return $this->fetch(); // 渲染模板
